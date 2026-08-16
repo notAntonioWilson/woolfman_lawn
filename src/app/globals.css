@@ -1,0 +1,99 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    @apply bg-white text-ink font-body antialiased;
+    line-height: 1.55;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    @apply font-display font-extrabold tracking-[-0.03em] leading-[0.98];
+  }
+  ::selection {
+    @apply bg-blade text-turf-dk;
+  }
+  :focus-visible {
+    @apply outline-none ring-[3px] ring-blade ring-offset-2;
+  }
+}
+
+@layer components {
+  .shell {
+    @apply w-full max-w-shell mx-auto px-5 sm:px-8;
+  }
+  .eyebrow {
+    @apply font-display text-[11px] font-bold tracking-[0.18em] uppercase text-turf;
+  }
+  .eyebrow-light {
+    @apply font-display text-[11px] font-bold tracking-[0.18em] uppercase text-blade;
+  }
+  .btn {
+    @apply inline-flex items-center justify-center gap-2 h-[52px] px-6 font-display font-bold text-[14.5px] rounded-[3px] transition-colors duration-150 whitespace-nowrap active:translate-y-[1px];
+  }
+  .btn-sm {
+    @apply h-11 px-5 text-[13.5px];
+  }
+  .btn-primary {
+    @apply bg-blade text-turf-dk hover:bg-blade-lt;
+  }
+  .btn-dark {
+    @apply bg-turf text-white hover:bg-turf-dk;
+  }
+  .btn-ghost {
+    @apply border-[1.5px] border-white/35 text-white hover:border-white hover:bg-white/10;
+  }
+  .btn-line {
+    @apply border-[1.5px] border-line text-ink hover:border-turf;
+  }
+  .btn-line-light {
+    @apply border-[1.5px] border-white/30 text-white hover:border-white;
+  }
+  .section {
+    @apply py-16 sm:py-24;
+  }
+  .h-sec {
+    @apply text-[clamp(30px,4vw,46px)] uppercase;
+  }
+  .stripe-bg {
+    background-image: repeating-linear-gradient(
+      114deg,
+      rgba(255, 255, 255, 0.055) 0 44px,
+      rgba(0, 0, 0, 0.04) 44px 88px
+    );
+  }
+  .stripe-soft {
+    background-image: repeating-linear-gradient(
+      114deg,
+      rgba(22, 81, 47, 0.05) 0 20px,
+      transparent 20px 40px
+    );
+  }
+  .field {
+    @apply w-full h-12 border-[1.5px] border-line rounded-[3px] px-3 text-[15px] bg-white text-ink transition-colors focus:border-turf outline-none;
+  }
+  .field-label {
+    @apply block font-display text-[11px] font-bold tracking-[0.13em] uppercase text-stone mb-[7px];
+  }
+  .mask-fade {
+    -webkit-mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+    mask-image: linear-gradient(to right, transparent, black 6%, black 94%, transparent);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
