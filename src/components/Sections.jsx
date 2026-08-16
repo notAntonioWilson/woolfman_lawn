@@ -293,7 +293,7 @@ export function ProcessSection() {
             copy={null}
           />
           <p className="text-stone max-w-[46ch] -mt-4">
-            You should not have to chase a landscaper for a price. Here is exactly what happens
+            You should not have to chase a landscaper for an answer. Here is exactly what happens
             after you reach out.
           </p>
           <div className="mt-8 bg-haze border-l-[3px] border-blade px-6 py-5 flex flex-wrap items-center justify-between gap-4 rounded-r-[3px]">
@@ -413,7 +413,7 @@ export function OwnerSection() {
 export function QuoteSection({
   eyebrow = "Free estimate",
   title = "Tell Us About The Property",
-  copy = "Takes about a minute. We send your price back the same day in most cases, with the work written out so there are no surprises.",
+  copy = "Takes about a minute. We get back to you the same day in most cases, with the work written out so there are no surprises.",
   defaultService = "",
 }) {
   return (

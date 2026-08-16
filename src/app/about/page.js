@@ -113,7 +113,7 @@ export default function About() {
             <p className="text-stone mb-4">
               We focus on reliable service, clean and detailed work, and building real
               relationships with customers instead of just showing up to cut grass. We are a
-              local, growing business that takes pride in being dependable, affordable, and
+              local, growing business that takes pride in being dependable, honest, and
               willing to go the extra mile.
             </p>
             <p className="text-stone mb-4">

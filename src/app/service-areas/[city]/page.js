@@ -92,7 +92,7 @@ export default async function CityPage({ params }) {
             </p>
             <SectionCta
               className="mt-8"
-              primary={{ href: "/contact", label: `Get a ${c.name} Estimate` }}
+              primary={{ href: "/contact", label: `Get a Free ${c.name} Estimate` }}
               secondary={{ href: "/gallery", label: "See Our Work" }}
             />
           </div>
@@ -159,7 +159,7 @@ export default async function CityPage({ params }) {
 
       <QuoteSection
         title={`Free Estimate in ${c.name}`}
-        copy={`Tell us about the property and we will send a real price back, usually the same day. Serving ${c.zips} and the surrounding streets.`}
+        copy={`Tell us about the property and we will get back to you with a full estimate, usually the same day. Serving ${c.zips} and the surrounding streets.`}
       />
     </>
   );

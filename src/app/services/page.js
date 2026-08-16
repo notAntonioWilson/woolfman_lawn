@@ -48,7 +48,7 @@ export default function ServicesPage() {
           </div>
           <SectionCta
             className="mt-8"
-            primary={{ href: "/contact", label: "Request Pricing" }}
+            primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/gallery", label: "See Completed Jobs" }}
           />
         </div>
@@ -62,7 +62,7 @@ export default function ServicesPage() {
         <div className="shell max-w-[900px]">
           <SectionHead
             eyebrow="Common questions"
-            title="Pricing, Scheduling, And What To Expect"
+            title="Scheduling, Service, And What To Expect"
           />
           <Faq items={FAQS.slice(0, 6)} />
           <SectionCta

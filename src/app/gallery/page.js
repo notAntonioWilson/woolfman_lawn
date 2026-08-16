@@ -70,7 +70,7 @@ export default function Gallery() {
       <ServicesSection />
       <QuoteSection
         title="Want Results Like These?"
-        copy="Send us the property details and we will tell you exactly what it needs and what it costs."
+        copy="Send us the property details and we will tell you exactly what it needs."
       />
     </>
   );

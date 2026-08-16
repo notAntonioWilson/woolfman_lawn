@@ -13,7 +13,7 @@ import { FAQS, BIZ } from "@/lib/site";
 export const metadata = {
   title: "Frequently Asked Questions",
   description:
-    "Pricing, scheduling, contracts, insurance, and service areas. The questions Detroit homeowners ask Woolfman Lawn Services every week.",
+    "Estimates, scheduling, contracts, insurance, and service areas. The questions Detroit homeowners ask Woolfman Lawn Services every week.",
   alternates: { canonical: "/faq" },
 };
 

@@ -51,8 +51,8 @@ export default function Hero() {
 
           <p className="mt-6 max-w-[54ch] text-[17px] text-white/75">
             Weekly lawn maintenance, mulch, sod, cleanups, and snow removal for homeowners across
-            metro Detroit. Over 150 properties serviced, same crew every week, and a real price
-            before we start.
+            metro Detroit. Over 150 properties serviced, same crew every week, and everything
+            written out before we start.
           </p>
 
           <div className="mt-9 flex flex-wrap gap-3">

@@ -81,7 +81,7 @@ export default function Contact() {
       <QuoteSection
         eyebrow="Free estimate"
         title="Request Your Free Estimate"
-        copy="Tell us about the property and we will send back a real price with the work written out. No cost and no obligation."
+        copy="Tell us about the property and we will get back to you with a full estimate and the work written out. No obligation."
       />
 
       <StatBar />

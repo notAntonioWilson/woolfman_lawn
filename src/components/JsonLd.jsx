@@ -13,7 +13,6 @@ export const localBusiness = {
   email: BIZ.email,
   founder: { "@type": "Person", name: BIZ.ownerFull },
   foundingDate: "2024",
-  priceRange: "$$",
   image: `${SITE_URL}/og.jpg`,
   description:
     "Licensed and insured lawn care and landscaping in Detroit, Michigan. Weekly lawn maintenance, mulching, sod installation, leaf removal, bush and tree trimming, and snow removal across metro Detroit.",

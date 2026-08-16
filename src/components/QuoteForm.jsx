@@ -25,7 +25,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
 
   async function submit() {
     if (!form.name.trim() || !form.phone.trim()) {
-      setError("Please add your name and a phone number so we can send your price.");
+      setError("Please add your name and a phone number so we can get back to you.");
       return;
     }
     setError("");
@@ -53,7 +53,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
       <div className="bg-white rounded-[4px] p-8 sm:p-10 text-center">
         <h3 className="text-[26px] uppercase mb-2.5">Request Sent</h3>
         <p className="text-stone max-w-[42ch] mx-auto">
-          {BIZ.owner} will reach out with your price, usually the same day. If it is urgent,
+          {BIZ.owner} will reach out about your property, usually the same day. If it is urgent,
           call {BIZ.phone}.
         </p>
         <button
@@ -74,7 +74,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
       {compact && (
         <div className="mb-5">
           <h3 className="text-[22px] uppercase">Get Your Free Estimate</h3>
-          <p className="text-stone text-[14px] mt-1">No cost, no obligation, fast response.</p>
+          <p className="text-stone text-[14px] mt-1">No obligation, fast response.</p>
         </div>
       )}
 
@@ -157,7 +157,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
             <option>As soon as possible</option>
             <option>This week</option>
             <option>Within the month</option>
-            <option>Just getting a price</option>
+            <option>Just looking into it</option>
           </select>
         </div>
 
@@ -244,7 +244,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
             {state === "sending" ? "Sending..." : "Get My Free Estimate"}
           </button>
           <p className="text-[12.5px] text-stone mt-3 text-center">
-            No cost, no obligation. Most estimates go out the same day.
+            No obligation. Most estimates go out the same day.
           </p>
         </div>
       </div>

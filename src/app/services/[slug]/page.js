@@ -81,7 +81,7 @@ export default async function ServiceDetail({ params }) {
 
             <SectionCta
               className="mt-7"
-              primary={{ href: "/contact", label: `Get a Price for ${s.name}` }}
+              primary={{ href: "/contact", label: `Get a Free Estimate` }}
               secondary={{ href: "/gallery", label: "See This Work" }}
             />
           </div>
@@ -150,9 +150,9 @@ export default async function ServiceDetail({ params }) {
 
       <OnTheJob />
       <QuoteSection
-        title={`Get a Price for ${s.name}`}
+        title={`Free Estimate for ${s.name}`}
         defaultService={s.name}
-        copy="Tell us about the property and we will send a real number back, usually the same day."
+        copy="Tell us about the property and we will get back to you with a full estimate, usually the same day."
       />
     </>
   );

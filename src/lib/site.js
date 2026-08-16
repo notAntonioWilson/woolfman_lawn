@@ -94,13 +94,13 @@ export const SERVICES = [
     short:
       "Weekly or biweekly cutting, edging, and trimming, with every hard surface blown off before we leave.",
     card:
-      "Same crew, same day each week, so you always know when we are coming. We cut, edge, line trim, and clear every walk and driveway before we pull away. Call or send the form and we will price your lot for free.",
+      "Same crew, same day each week, so you always know when we are coming. We cut, edge, line trim, and clear every walk and driveway before we pull away. Call or send the form and we will come take a look.",
     intro:
       "Reliable weekly and biweekly lawn care for homeowners across Detroit and the surrounding metro. Same crew, same day, every week.",
     body: [
       "Most lawns in our service area take under thirty minutes, and we run tight routes so your yard gets cut on the same day each week. You do not have to be home and you do not have to chase us for a schedule.",
       "Every visit ends the same way. Beds and walks get edged, fences and posts get line trimmed, and the driveway, walkway, and porch get blown off. We never leave clippings on your concrete.",
-      "There is no contract. Weekly and biweekly service runs until you tell us to stop, and the price does not change unless the scope does.",
+      "There is no contract. Weekly and biweekly service runs until you tell us to stop, and what we agreed to does not change unless the scope does.",
     ],
     includes: [
       "Cut and stripe the full lawn",
@@ -118,7 +118,7 @@ export const SERVICES = [
     short:
       "Clean spade edges and fresh mulch, laid at an even depth so beds hold color all season.",
     card:
-      "Fresh mulch is the fastest way to change how a property looks from the street. We pull weeds, cut a crisp edge, and lay mulch even so beds hold color and stay clean. Send a photo and we will quote it free.",
+      "Fresh mulch is the fastest way to change how a property looks from the street. We pull weeds, cut a crisp edge, and lay mulch even so beds hold color and stay clean. Send a photo and we will tell you what it needs.",
     intro:
       "The single fastest upgrade to how a property looks from the street, and one of the most requested jobs we do every spring.",
     body: [
@@ -142,7 +142,7 @@ export const SERVICES = [
     short:
       "New lawn graded, laid tight, and rolled flat, ready to water the same day we finish.",
     card:
-      "Bare spots, mud runs, or a full front yard replacement. We grade the base, lay fresh sod seam to seam, roll it flat, and walk you through the first two weeks of watering. Free quote either way.",
+      "Bare spots, mud runs, or a full front yard replacement. We grade the base, lay fresh sod seam to seam, roll it flat, and walk you through the first two weeks of watering. Free estimate either way.",
     intro:
       "Bare patches, mud runs, or a full front yard replacement. We install fresh sod and set you up so it takes.",
     body: [
@@ -166,7 +166,7 @@ export const SERVICES = [
     short:
       "Full property cleanup, beds and curb line included, with everything hauled off your lot.",
     card:
-      "We clear the lawn, beds, window wells, and curb line, then haul it all off. Book one cleanup or set a recurring fall schedule so leaves never get ahead of you. Ask us for a free price.",
+      "We clear the lawn, beds, window wells, and curb line, then haul it all off. Book one cleanup or set a recurring fall schedule so leaves never get ahead of you. Ask us for a free estimate.",
     intro:
       "A full fall cleanup that clears the whole property, not just the middle of the lawn.",
     body: [
@@ -190,13 +190,13 @@ export const SERVICES = [
     short:
       "Driveways, walks, and salt, cleared overnight so you can get out in the morning.",
     card:
-      "Seasonal contracts and per storm clearing. We run routes overnight so your drive and walk are open before you leave for work, with salt available for ice. Lock in a price before winter.",
+      "Seasonal contracts and per storm clearing. We run routes overnight so your drive and walk are open before you leave for work, with salt available for ice. Get on the route before winter.",
     intro:
       "Seasonal contracts and per storm clearing across metro Detroit, run overnight so your drive is open before work.",
     body: [
       "We run our routes overnight and into the early morning. The goal is simple: your driveway and walk are open before you need to leave.",
       "We clear the full driveway including the apron at the street, plus walkways and steps. Salt is available on request for ice on walks and porches.",
-      "Seasonal contracts get priority on the route and a locked price for the whole winter. Per storm clearing is available when the route allows.",
+      "Seasonal contracts get priority on the route and locked terms for the whole winter. Per storm clearing is available when the route allows.",
     ],
     includes: [
       "Full driveway and street apron",
@@ -214,7 +214,7 @@ export const SERVICES = [
     short:
       "Hedges and foundation shrubs shaped back to a clean line, with beds swept and debris hauled.",
     card:
-      "Overgrown shrubs hide your house. We shape hedges and foundation plantings back to a clean line, clear the dead growth, and sweep the beds behind us. Send a photo and we will price it free.",
+      "Overgrown shrubs hide your house. We shape hedges and foundation plantings back to a clean line, clear the dead growth, and sweep the beds behind us. Send a photo and we will take a look.",
     intro:
       "Overgrown shrubs hide a house. We shape them back to a clean line and clean up behind ourselves.",
     body: [
@@ -266,7 +266,7 @@ export const CITIES = [
     intro:
       "Woolfman Lawn Services is based in Detroit and most of our routes run right here. If you are inside the city, we can usually get you on the schedule the same week.",
     body: [
-      "Detroit lots come in every shape. Narrow city lots on the west side, double lots where a neighbor came down, corner lots with twice the edging. We price by what is actually there rather than a flat rate off a map.",
+      "Detroit lots come in every shape. Narrow city lots on the west side, double lots where a neighbor came down, corner lots with twice the edging. We assess by what is actually there rather than working off a map.",
       "We run weekly and biweekly maintenance across the west side and northwest Detroit, plus mulch, sod, and full cleanups on request. In winter the same routes turn into snow routes.",
     ],
     services: ["lawn-maintenance", "mulching", "leaf-removal", "snow-removal"],
@@ -279,7 +279,7 @@ export const CITIES = [
     intro:
       "Redford sits right on our main route out of Detroit, which means tight scheduling and a crew that is already in the area.",
     body: [
-      "Most Redford properties are consistent lot sizes with mature trees, which makes them straightforward to price and quick to service on a weekly rotation.",
+      "Most Redford properties are consistent lot sizes with mature trees, which makes them straightforward to assess and quick to service on a weekly rotation.",
       "Fall is the busy season out here. Those mature trees drop a lot, so recurring leaf removal through October and November is worth setting up before the first drop.",
     ],
     services: ["lawn-maintenance", "leaf-removal", "bush-trimming", "snow-removal"],
@@ -303,10 +303,10 @@ export const CITIES = [
     zips: "48322, 48323, 48324",
     blurb: "Larger lots, bush and tree trimming.",
     intro:
-      "West Bloomfield properties run larger, with more trees and more bed line. That changes what a yard needs and how we price it.",
+      "West Bloomfield properties run larger, with more trees and more bed line. That changes what a yard needs and how we approach it.",
     body: [
       "On bigger lots the trimming work matters as much as the cut. Shrub shaping, clearance limbs over drives, and deadwood removal keep a large property from looking neglected even when the lawn is perfect.",
-      "We quote larger lots in person rather than off a photo, so you get a real number instead of a range that moves later.",
+      "We assess larger lots in person rather than off a photo, so nothing moves later.",
     ],
     services: ["lawn-maintenance", "bush-trimming", "tree-trimming", "mulching"],
   },
@@ -319,7 +319,7 @@ export const CITIES = [
       "Warren is where a lot of our seasonal work lives. Full year coverage from the first cut in April through the last plow in March.",
     body: [
       "Consistent lot sizes across Warren make it easy to run a tight weekly route, which is why we can hold a reliable service day out here through the whole season.",
-      "Snow contracts fill up first in Warren. If you want a locked price and route priority for winter, set it up before the first storm rather than after.",
+      "Snow contracts fill up first in Warren. If you want route priority for winter, set it up before the first storm rather than after.",
     ],
     services: ["lawn-maintenance", "snow-removal", "leaf-removal", "mulching"],
   },
@@ -327,12 +327,12 @@ export const CITIES = [
 
 export const FAQS = [
   {
-    q: "How much does a lawn cut cost?",
-    a: "Price comes down to lot size and how often we come out. Weekly service is cheaper per visit than biweekly because the grass never gets away from us. We give you an exact number before we start and it does not change unless the scope does.",
+    q: "How do estimates work?",
+    a: "Every property is different, so we look at lot size, scope, and access before we tell you anything. You get a full written estimate before we start, and it does not change unless the scope does. Call, text, or send the form and we will get back to you, usually the same day.",
   },
   {
     q: "Do you require a contract?",
-    a: "No. Weekly and biweekly maintenance runs until you tell us to stop. Seasonal snow contracts are the one exception, and those are written out and priced before winter starts.",
+    a: "No. Weekly and biweekly maintenance runs until you tell us to stop. Seasonal snow contracts are the one exception, and those are written out and agreed before winter starts.",
   },
   {
     q: "How fast can you get out here?",
@@ -362,7 +362,7 @@ export const FAQS = [
 
 export const PROCESS = [
   { n: "01", t: "You send the details", d: "Fill out the estimate form or call. Takes about a minute." },
-  { n: "02", t: "We price it", d: "Same day quote in most cases, with the scope written out." },
+  { n: "02", t: "We assess it", d: "Same day response in most cases, with the scope written out." },
   { n: "03", t: "You get a service day", d: "A day and a window that we hold week after week." },
   { n: "04", t: "You look at the yard", d: "Not right? Tell us same day and we come back out." },
 ];
@@ -385,8 +385,8 @@ export const PROMISES = [
     d: "Beds edged, walks blown off, clippings gone. You should not be able to tell we were there except that it looks better.",
   },
   {
-    t: "A real price up front",
-    d: "You get an exact number before we start, not a range that moves after the work is done.",
+    t: "Everything up front",
+    d: "You know exactly what we are doing before we start, and the scope does not change on you after the work is done.",
   },
   {
     t: "Fix it same day",
