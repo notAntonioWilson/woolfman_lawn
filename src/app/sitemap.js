@@ -10,7 +10,6 @@ export default function sitemap() {
     { url: "/contact", priority: 0.9, changeFrequency: "monthly" },
     { url: "/gallery", priority: 0.8, changeFrequency: "weekly" },
     { url: "/about", priority: 0.7, changeFrequency: "monthly" },
-    { url: "/reviews", priority: 0.7, changeFrequency: "weekly" },
     { url: "/faq", priority: 0.6, changeFrequency: "monthly" },
     { url: "/privacy-policy", priority: 0.2, changeFrequency: "yearly" },
     { url: "/terms-of-service", priority: 0.2, changeFrequency: "yearly" },

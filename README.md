@@ -99,8 +99,8 @@ All images currently point at `picsum.photos` placeholders so nothing renders br
 
 1. Create and verify the Google Business Profile. Verification can take 1–2 weeks, so start it the day the domain resolves.
 2. Add the site to Google Search Console and submit `/sitemap.xml`.
-3. Paste the GBP review link into `GOOGLE_REVIEW_URL` in `src/app/reviews/page.js`.
-4. As reviews come in, add them to the `REVIEWS` array on that same page. The page swaps from the empty state to the review wall automatically. Only add `aggregateRating` to schema once there are real published reviews behind it.
+3. The Reviews page is intentionally not live. Once the GBP exists and has real reviews, restore it from `docs/reviews-page.js.parked`: move it to `src/app/reviews/page.js`, add `{ href: "/reviews", label: "Reviews" }` to `NAV_LINKS` in `src/lib/site.js`, and add `/reviews` back to `src/app/sitemap.js`. Paste the GBP review link into `GOOGLE_REVIEW_URL` and fill the `REVIEWS` array.
+4. Only add `aggregateRating` to schema once there are real published reviews behind it.
 
 ---
 

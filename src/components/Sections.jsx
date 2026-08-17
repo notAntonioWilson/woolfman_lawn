@@ -350,7 +350,7 @@ export function PromisesSection() {
           light
           className="mt-10"
           primary={{ href: "/contact", label: "Get a Free Estimate" }}
-          secondary={{ href: "/reviews", label: "Read Reviews" }}
+          secondary={{ href: "/gallery", label: "See Our Work" }}
         />
       </div>
     </section>
