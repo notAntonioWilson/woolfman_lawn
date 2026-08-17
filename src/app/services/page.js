@@ -42,7 +42,7 @@ export default function ServicesPage() {
             <b className="font-display text-[17px] uppercase text-ink">
               Not sure what you need? Send photos and we will tell you.
             </b>
-            <Link href="/contact" className="btn btn-sm btn-dark">
+            <Link href="/contact" className="btn btn-sm btn-block btn-dark">
               Get a Free Estimate
             </Link>
           </div>

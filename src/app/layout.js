@@ -2,6 +2,7 @@ import { Archivo, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+import MobileBar from "@/components/MobileBar";
 import JsonLd, { localBusiness } from "@/components/JsonLd";
 import { BIZ, SITE_URL } from "@/lib/site";
 
@@ -76,6 +77,7 @@ export default function RootLayout({ children }) {
         <Nav />
         <main id="main">{children}</main>
         <Footer />
+        <MobileBar />
       </body>
     </html>
   );

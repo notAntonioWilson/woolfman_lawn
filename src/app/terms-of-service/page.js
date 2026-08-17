@@ -12,7 +12,7 @@ const UPDATED = "August 2026";
 
 const S = ({ title, children }) => (
   <section className="mb-7">
-    <h2 className="text-[21px] uppercase mb-2.5">{title}</h2>
+    <h2 className="text-[19px] sm:text-[21px] uppercase mb-2.5">{title}</h2>
     <div className="space-y-2.5 text-stone text-[15.5px]">{children}</div>
   </section>
 );

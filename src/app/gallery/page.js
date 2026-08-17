@@ -40,7 +40,7 @@ export default function Gallery() {
             title="Properties We Have Serviced"
             copy="Over 150 properties across Detroit and the surrounding suburbs, and counting."
           />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+          <div className="grid grid-cols-2 lg:grid-cols-3 gap-2 sm:gap-3">
             {GALLERY.map((g, i) => (
               <div
                 key={i}

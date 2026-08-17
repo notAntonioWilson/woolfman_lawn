@@ -151,7 +151,7 @@ export default function Nav() {
                       <li key={s.slug}>
                         <Link
                           href={`/services/${s.slug}`}
-                          className={`block px-5 py-2.5 text-[14.5px] transition-colors hover:bg-haze hover:text-ink ${
+                          className={`block px-5 py-3 text-[14.5px] transition-colors hover:bg-haze hover:text-ink ${
                             path === `/services/${s.slug}`
                               ? "text-ink font-medium"
                               : "text-stone"
@@ -203,7 +203,7 @@ export default function Nav() {
       </div>
 
       {open && (
-        <div className="lg:hidden border-t border-line bg-white pb-6 max-h-[calc(100vh-74px)] overflow-y-auto">
+        <div className="lg:hidden border-t border-line bg-white pb-6 max-h-[calc(100dvh-74px)] overflow-y-auto">
           <div className="shell">
             <Link
               href="/"
@@ -246,7 +246,7 @@ export default function Nav() {
                     <li key={s.slug}>
                       <Link
                         href={`/services/${s.slug}`}
-                        className="block py-2.5 text-[16px] text-stone"
+                        className="block py-3 text-[16px] text-stone"
                       >
                         {s.name}
                       </Link>

@@ -60,7 +60,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
           call {BIZ.phone}.
         </p>
         <button
-          className="btn btn-sm btn-line mt-5"
+          className="btn btn-sm btn-line mt-5 w-full sm:w-auto"
           onClick={() => {
             setForm({ ...EMPTY, service: defaultService });
             setState("idle");
@@ -173,7 +173,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
                 key={c}
                 type="button"
                 onClick={() => setForm({ ...form, contact: c })}
-                className={`flex-1 h-11 rounded-[3px] border-[1.5px] text-[14px] font-medium transition-colors ${
+                className={`flex-1 h-12 sm:h-11 rounded-[3px] border-[1.5px] text-[14.5px] font-medium transition-colors ${
                   form.contact === c
                     ? "border-turf bg-turf text-white"
                     : "border-line text-ink hover:border-turf"
@@ -228,7 +228,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
             type="button"
             onClick={submit}
             disabled={state === "sending"}
-            className="btn btn-primary w-full disabled:opacity-60"
+            className="btn btn-primary w-full h-[52px] disabled:opacity-60"
           >
             {state === "sending" ? "Sending..." : "Get My Free Estimate"}
           </button>

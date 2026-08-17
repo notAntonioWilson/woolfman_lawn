@@ -20,7 +20,7 @@ export default function Hero() {
           className="object-cover"
           unoptimized
         />
-        <div className="absolute inset-0 bg-gradient-to-r from-turf-dp via-turf-dp/90 to-turf-dp/55" />
+        <div className="absolute inset-0 bg-gradient-to-b from-turf-dp/95 via-turf-dp/92 to-turf-dp/85 lg:bg-gradient-to-r lg:from-turf-dp lg:via-turf-dp/90 lg:to-turf-dp/55" />
         <div className="absolute inset-0 stripe-bg animate-drift" />
       </div>
 
@@ -30,11 +30,11 @@ export default function Hero() {
             {BIZ.tagline} &nbsp;&#124;&nbsp; Licensed &amp; Insured LLC
           </div>
 
-          <h1 className="text-[clamp(40px,6.6vw,80px)] font-black uppercase max-w-[15ch]">
+          <h1 className="text-[clamp(33px,8.4vw,80px)] font-black uppercase max-w-[15ch]">
             Lawn Care &amp; Landscaping in <span className="text-blade">Detroit, MI</span>
           </h1>
 
-          <p className="mt-4 font-display font-semibold text-[15px] tracking-[0.02em] text-white/85">
+          <p className="mt-4 font-display font-semibold text-[14px] sm:text-[15px] tracking-[0.02em] text-white/85">
             Also serving{" "}
             {others.map((c, i) => (
               <span key={c.slug}>
@@ -56,19 +56,22 @@ export default function Hero() {
             written out before we start.
           </p>
 
-          <div className="mt-7 flex flex-wrap gap-3">
-            <a href={`tel:${BIZ.phoneRaw}`} className="btn btn-primary">
+          <div className="mt-7 flex flex-wrap gap-2.5">
+            <a
+              href={`tel:${BIZ.phoneRaw}`}
+              className="btn btn-primary w-full sm:w-auto"
+            >
               Call {BIZ.phone}
             </a>
-            <Link href="/services" className="btn btn-ghost">
+            <Link href="/services" className="btn btn-ghost flex-1 sm:flex-none px-4 sm:px-6">
               View Services
             </Link>
-            <Link href="/gallery" className="btn btn-ghost">
+            <Link href="/gallery" className="btn btn-ghost flex-1 sm:flex-none px-4 sm:px-6">
               See Our Work
             </Link>
           </div>
 
-          <div className="mt-7 pt-5 border-t border-white/15 flex flex-wrap gap-x-8 gap-y-2.5">
+          <div className="mt-7 pt-5 border-t border-white/15 flex flex-wrap gap-x-5 sm:gap-x-8 gap-y-2">
             {CHIPS.map((c) => (
               <span
                 key={c}
@@ -80,7 +83,7 @@ export default function Hero() {
           </div>
         </div>
 
-        <div className="lg:pl-4">
+        <div className="mt-2 lg:mt-0 lg:pl-4">
           <QuoteForm compact pageSource="/ hero" />
         </div>
       </div>

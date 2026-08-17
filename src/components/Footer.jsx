@@ -95,7 +95,7 @@ export default function Footer() {
                 </Link>
               </li>
               <li>
-                <Link href="/contact" className="btn btn-sm btn-primary mt-2">
+                <Link href="/contact" className="btn btn-sm btn-primary mt-2 w-full sm:w-auto">
                   Get a Free Estimate
                 </Link>
               </li>
@@ -103,11 +103,11 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 pt-5 border-t border-white/10 flex flex-wrap gap-4 justify-between text-[13px]">
+        <div className="mt-10 pt-5 border-t border-white/10 flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4 sm:justify-between text-[13px]">
           <span>
             &copy; {new Date().getFullYear()} {BIZ.legalName}. All rights reserved.
           </span>
-          <span className="flex flex-wrap gap-5">
+          <span className="flex flex-wrap gap-x-5 gap-y-2">
             <Link href="/privacy-policy" className="hover:text-white transition-colors">
               Privacy Policy
             </Link>

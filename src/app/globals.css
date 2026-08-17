@@ -9,6 +9,12 @@
   body {
     @apply bg-white text-ink font-body antialiased;
     line-height: 1.55;
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  @media (max-width: 1023px) {
+    body {
+      padding-bottom: calc(66px + env(safe-area-inset-bottom));
+    }
   }
   h1,
   h2,
@@ -36,6 +42,9 @@
   }
   .btn {
     @apply inline-flex items-center justify-center gap-2 h-[52px] px-6 font-display font-bold text-[14.5px] rounded-[3px] transition-colors duration-150 whitespace-nowrap active:translate-y-[1px];
+  }
+  .btn-block {
+    @apply w-full sm:w-auto;
   }
   .btn-sm {
     @apply h-11 px-5 text-[13.5px];
@@ -79,7 +88,7 @@
     );
   }
   .field {
-    @apply w-full h-11 border-[1.5px] border-line rounded-[3px] px-3 text-[15px] bg-white text-ink transition-colors focus:border-turf outline-none;
+    @apply w-full h-12 sm:h-11 border-[1.5px] border-line rounded-[3px] px-3 text-[16px] sm:text-[15px] bg-white text-ink transition-colors focus:border-turf outline-none;
   }
   .field-label {
     @apply block font-display text-[11px] font-bold tracking-[0.13em] uppercase text-stone mb-[7px];

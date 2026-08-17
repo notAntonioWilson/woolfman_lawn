@@ -17,10 +17,10 @@ export default function NotFound() {
           {BIZ.phone} and we will point you the right way.
         </p>
         <div className="flex flex-wrap gap-3 justify-center">
-          <Link href="/" className="btn btn-primary">
+          <Link href="/" className="btn btn-block btn-primary">
             Back to Home
           </Link>
-          <Link href="/services" className="btn btn-line">
+          <Link href="/services" className="btn btn-block btn-line">
             View Services
           </Link>
         </div>

@@ -20,7 +20,7 @@ export function SectionHead({ eyebrow, title, copy, light = false, center = fals
         </h2>
       </div>
       {copy && (
-        <p className={`max-w-[46ch] text-[16px] ${light ? "text-white/70" : "text-stone"}`}>
+        <p className={`max-w-[46ch] text-[15.5px] sm:text-[16px] ${light ? "text-white/70" : "text-stone"}`}>
           {copy}
         </p>
       )}
@@ -38,11 +38,14 @@ export function SectionCta({
 }) {
   return (
     <div className={`flex flex-wrap gap-3 ${left ? "" : "justify-center"} ${className}`}>
-      <Link href={primary.href} className="btn btn-primary">
+      <Link href={primary.href} className="btn btn-block btn-primary">
         {primary.label}
       </Link>
       {secondary && (
-        <Link href={secondary.href} className={`btn ${light ? "btn-line-light" : "btn-line"}`}>
+        <Link
+          href={secondary.href}
+          className={`btn btn-block ${light ? "btn-line-light" : "btn-line"}`}
+        >
           {secondary.label}
         </Link>
       )}
@@ -55,13 +58,13 @@ export function StatBar() {
   return (
     <section className="bg-turf-dk text-white relative overflow-hidden">
       <div className="absolute inset-0 stripe-bg" />
-      <div className="shell relative py-7 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-6">
+      <div className="shell relative py-6 sm:py-7 flex flex-wrap gap-y-5 gap-x-4">
         {STATS.map((s) => (
-          <div key={s.label}>
-            <div className="font-display font-extrabold text-[27px] leading-none text-white">
+          <div key={s.label} className="grow shrink-0 basis-[calc(50%-8px)] sm:basis-[150px]">
+            <div className="font-display font-extrabold text-[24px] sm:text-[27px] leading-none text-white">
               {s.value}
             </div>
-            <div className="font-display text-[10.5px] font-semibold tracking-[0.15em] uppercase text-white/55 mt-1.5">
+            <div className="font-display text-[10px] sm:text-[10.5px] font-semibold tracking-[0.14em] uppercase text-white/55 mt-1.5">
               {s.label}
             </div>
           </div>
@@ -301,7 +304,7 @@ export function ProcessSection({ flush = false }) {
             <b className="font-display text-[17px] uppercase text-ink">
               Questions first? Text {BIZ.phone}
             </b>
-            <a href={`sms:${BIZ.phoneRaw}`} className="btn btn-sm btn-dark">
+            <a href={`sms:${BIZ.phoneRaw}`} className="btn btn-sm btn-block btn-dark">
               Send a Text
             </a>
           </div>
@@ -367,7 +370,7 @@ export function OwnerSection() {
   return (
     <section className="section">
       <div className="shell grid lg:grid-cols-2 gap-10 items-center">
-        <div className="relative">
+        <div className="relative mb-6 lg:mb-0">
           <div className="relative aspect-[4/5] rounded-[4px] overflow-hidden bg-turf-dk">
             <Image
               src="https://picsum.photos/seed/wf-owner/1200/1500"
@@ -474,7 +477,7 @@ export function PageHeader({ crumb, title, copy, cta = true, center = false }) {
           </div>
         )}
         <h1
-          className={`text-[clamp(34px,5.4vw,62px)] uppercase max-w-[19ch] ${
+          className={`text-[clamp(29px,7vw,62px)] uppercase max-w-[19ch] ${
             center ? "mx-auto" : ""
           }`}
         >

@@ -100,7 +100,7 @@ export default async function ServiceDetail({ params }) {
             </div>
             <div className="mt-3.5 bg-haze border-l-[3px] border-blade px-5 py-3.5 rounded-r-[3px] flex flex-wrap items-center justify-between gap-3">
               <b className="font-display text-[15px] uppercase">Call {BIZ.phone}</b>
-              <a href={`tel:${BIZ.phoneRaw}`} className="btn btn-sm btn-dark">
+              <a href={`tel:${BIZ.phoneRaw}`} className="btn btn-sm btn-block btn-dark">
                 Call Now
               </a>
             </div>
