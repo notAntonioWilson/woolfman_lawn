@@ -34,11 +34,11 @@ export default function Home() {
       <StatBar />
       <Ticker />
       <PhotoStrip />
-      <ServicesSection />
+      <ServicesSection flush />
       <PromisesSection />
       <CitiesSection />
       <OwnerSection />
-      <ProcessSection />
+      <ProcessSection flush />
       <OnTheJob />
 
       <section className="section">
@@ -50,7 +50,7 @@ export default function Home() {
           />
           <Faq items={homeFaqs} />
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/faq", label: "Read All Questions" }}
           />

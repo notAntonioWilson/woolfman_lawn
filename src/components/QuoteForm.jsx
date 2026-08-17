@@ -53,14 +53,14 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
 
   if (state === "sent") {
     return (
-      <div className="bg-white rounded-[4px] p-8 sm:p-10 text-center">
+      <div className="bg-white rounded-[4px] p-7 sm:p-8 text-center">
         <h3 className="text-[26px] uppercase mb-2.5">Request Sent</h3>
         <p className="text-stone max-w-[42ch] mx-auto">
           {BIZ.owner} will reach out about your property, usually the same day. If it is urgent,
           call {BIZ.phone}.
         </p>
         <button
-          className="btn btn-sm btn-line mt-6"
+          className="btn btn-sm btn-line mt-5"
           onClick={() => {
             setForm({ ...EMPTY, service: defaultService });
             setState("idle");
@@ -73,15 +73,15 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
   }
 
   return (
-    <div className="bg-white rounded-[4px] p-6 sm:p-8">
+    <div className="bg-white rounded-[4px] p-5 sm:p-6">
       {compact && (
-        <div className="mb-5">
+        <div className="mb-4">
           <h3 className="text-[22px] uppercase">Get Your Free Estimate</h3>
           <p className="text-stone text-[14px] mt-1">No obligation, fast response.</p>
         </div>
       )}
 
-      <div className="grid gap-4 sm:grid-cols-2">
+      <div className="grid gap-3.5 sm:grid-cols-2">
         <div>
           <label htmlFor="qf-name" className="field-label">
             Full name
@@ -173,7 +173,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
                 key={c}
                 type="button"
                 onClick={() => setForm({ ...form, contact: c })}
-                className={`flex-1 h-12 rounded-[3px] border-[1.5px] text-[14px] font-medium transition-colors ${
+                className={`flex-1 h-11 rounded-[3px] border-[1.5px] text-[14px] font-medium transition-colors ${
                   form.contact === c
                     ? "border-turf bg-turf text-white"
                     : "border-line text-ink hover:border-turf"
@@ -208,7 +208,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
               </label>
               <textarea
                 id="qf-message"
-                className="field h-24 py-3 resize-y"
+                className="field h-[76px] py-2.5 resize-y"
                 value={form.message}
                 onChange={set("message")}
                 placeholder="Gate code, dog in the yard, corner lot, hill in the back..."
@@ -232,7 +232,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
           >
             {state === "sending" ? "Sending..." : "Get My Free Estimate"}
           </button>
-          <p className="text-[12.5px] text-stone mt-3 text-center">
+          <p className="text-[12.5px] text-stone mt-2.5 text-center">
             No obligation. Most estimates go out the same day.
           </p>
         </div>

@@ -56,28 +56,28 @@ export default async function ServiceDetail({ params }) {
       />
 
       <section className="section">
-        <div className="shell grid lg:grid-cols-2 gap-12 items-start">
+        <div className="shell grid lg:grid-cols-2 gap-10 items-start">
           <div>
             <div className="eyebrow mb-3.5">What you get</div>
-            <h2 className="h-sec mb-5">Every Visit, Every Time</h2>
+            <h2 className="h-sec mb-4">Every Visit, Every Time</h2>
             {s.body.map((p, i) => (
-              <p key={i} className="text-stone mb-4">
+              <p key={i} className="text-stone mb-3">
                 {p}
               </p>
             ))}
 
-            <ul className="mt-8 border-t border-line">
+            <ul className="mt-6 border-t border-line">
               {s.includes.map((i) => (
                 <li
                   key={i}
-                  className="relative py-3.5 pl-7 border-b border-line text-[15px] before:content-[''] before:absolute before:left-0 before:top-[22px] before:w-3 before:h-[2px] before:bg-blade"
+                  className="relative py-3 pl-7 border-b border-line text-[15px] before:content-[''] before:absolute before:left-0 before:top-[20px] before:w-3 before:h-[2px] before:bg-blade"
                 >
                   {i}
                 </li>
               ))}
             </ul>
 
-            <div className="eyebrow mt-7">Season &middot; {s.season}</div>
+            <div className="eyebrow mt-5">Season &middot; {s.season}</div>
 
             <SectionCta
               left
@@ -98,7 +98,7 @@ export default async function ServiceDetail({ params }) {
                 unoptimized
               />
             </div>
-            <div className="mt-4 bg-haze border-l-[3px] border-blade px-5 py-4 rounded-r-[3px] flex flex-wrap items-center justify-between gap-3">
+            <div className="mt-3.5 bg-haze border-l-[3px] border-blade px-5 py-3.5 rounded-r-[3px] flex flex-wrap items-center justify-between gap-3">
               <b className="font-display text-[15px] uppercase">Call {BIZ.phone}</b>
               <a href={`tel:${BIZ.phoneRaw}`} className="btn btn-sm btn-dark">
                 Call Now
@@ -122,7 +122,7 @@ export default async function ServiceDetail({ params }) {
               <Link
                 key={c.slug}
                 href={`/service-areas/${c.slug}`}
-                className="bg-white p-6 grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[190px] hover:bg-haze transition-colors"
+                className="bg-white p-5 grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[190px] hover:bg-haze transition-colors"
               >
                 <h3 className="text-[18px] uppercase mb-2">{c.name}</h3>
                 <p className="text-stone text-[13.5px]">{c.blurb}</p>
@@ -130,7 +130,7 @@ export default async function ServiceDetail({ params }) {
             ))}
           </div>
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/contact", label: "Check My Address" }}
             secondary={{ href: "/service-areas", label: "All Service Areas" }}
           />
@@ -142,14 +142,14 @@ export default async function ServiceDetail({ params }) {
           <SectionHead eyebrow="Also available" title="Other Services We Offer" />
           <ServiceCards items={others} />
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/services", label: "View All Services" }}
             secondary={{ href: "/contact", label: "Get a Free Estimate" }}
           />
         </div>
       </section>
 
-      <OnTheJob />
+      <OnTheJob flush />
       <QuoteSection
         title={`Free Estimate for ${s.name}`}
         defaultService={s.name}

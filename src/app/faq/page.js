@@ -37,7 +37,7 @@ export default function FaqPage() {
         <div className="shell max-w-[900px]">
           <Faq items={FAQS} />
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/contact", label: "Ask Us Directly" }}
             secondary={{ href: "/gallery", label: "See Our Work" }}
           />

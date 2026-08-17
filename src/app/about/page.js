@@ -49,7 +49,7 @@ export default function About() {
       />
 
       <section className="section">
-        <div className="shell grid lg:grid-cols-2 gap-12 items-center">
+        <div className="shell grid lg:grid-cols-2 gap-10 items-center">
           <div className="relative">
             <div className="relative aspect-[4/5] rounded-[4px] overflow-hidden bg-turf-dk">
               <Image
@@ -62,7 +62,7 @@ export default function About() {
                 unoptimized
               />
             </div>
-            <div className="absolute -bottom-5 left-5 bg-blade text-turf-dk px-6 py-4 rounded-[3px]">
+            <div className="absolute -bottom-4 left-4 bg-blade text-turf-dk px-5 py-3.5 rounded-[3px]">
               <div className="font-display font-extrabold text-[26px] leading-none">150+</div>
               <div className="font-display text-[10px] font-bold tracking-[0.14em] uppercase mt-1">
                 Properties Serviced
@@ -72,20 +72,20 @@ export default function About() {
 
           <div>
             <div className="eyebrow mb-3.5">Meet the owner</div>
-            <h2 className="h-sec mb-5">Keonte Woolf</h2>
-            <p className="text-stone mb-4">
+            <h2 className="h-sec mb-4">Keonte Woolf</h2>
+            <p className="text-stone mb-3">
               Keonte started Woolfman Lawn Services with one mower, one trailer, and a short list
               of neighbors who needed their grass cut. Two years later it is a licensed and
               insured LLC running weekly routes through Detroit, Redford, Southfield, West
               Bloomfield, and Warren, with more than 150 properties serviced.
             </p>
-            <p className="text-stone mb-4">
+            <p className="text-stone mb-3">
               What has not changed is who shows up. Keonte is on the jobs himself. He walks the
               property, tells you what it actually needs instead of what is easiest to sell, and
               checks the yard before the trailer gets loaded. Call the number on this site and you
               get him, not a dispatcher.
             </p>
-            <p className="text-stone mb-4">
+            <p className="text-stone mb-3">
               The business grew on word of mouth, which only works one way: do the job right every
               time so the customer tells the next person. That is the whole strategy, and it is
               why the standard does not slip when the schedule gets full.
@@ -103,22 +103,22 @@ export default function About() {
       <StatBar />
 
       <section className="section">
-        <div className="shell grid lg:grid-cols-2 gap-12 items-center">
+        <div className="shell grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <div className="eyebrow mb-3.5">Our standard</div>
-            <h2 className="h-sec mb-5">We Treat Every Property Like It Is Ours</h2>
-            <p className="text-stone mb-4">
+            <h2 className="h-sec mb-4">We Treat Every Property Like It Is Ours</h2>
+            <p className="text-stone mb-3">
               That line gets used by a lot of companies. Here is what it means in practice: the
               beds get edged even when nobody asked, the driveway gets blown off before we pull
               away, and the clippings do not end up in the street.
             </p>
-            <p className="text-stone mb-4">
+            <p className="text-stone mb-3">
               We focus on reliable service, clean and detailed work, and building real
               relationships with customers instead of just showing up to cut grass. We are a
               local, growing business that takes pride in being dependable, honest, and
               willing to go the extra mile.
             </p>
-            <p className="text-stone mb-4">
+            <p className="text-stone mb-3">
               Whether it is a simple lawn cut or a full yard cleanup, the goal is the same: leave
               every customer completely satisfied and make their property look its best.
             </p>
@@ -133,7 +133,7 @@ export default function About() {
             />
           </div>
 
-          <div className="grid gap-3.5">
+          <div className="grid gap-3">
             <div className="relative aspect-[16/10] rounded-[4px] overflow-hidden bg-turf-dk">
               <Image
                 src={PHOTOS.aboutTruck.src}
@@ -187,7 +187,7 @@ export default function About() {
             ].map((x) => (
               <div
                 key={x.t}
-                className="bg-white p-7 grow shrink-0 basis-full sm:basis-[280px]"
+                className="bg-white p-6 grow shrink-0 basis-full sm:basis-[280px]"
               >
                 <h3 className="text-[19px] uppercase mb-2.5">{x.t}</h3>
                 <p className="text-stone text-[14.5px]">{x.d}</p>
@@ -195,7 +195,7 @@ export default function About() {
             ))}
           </div>
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/gallery", label: "See Our Work" }}
           />

@@ -4,18 +4,18 @@ import { Wordmark } from "./Nav";
 
 export default function Footer() {
   return (
-    <footer className="bg-ink text-white/60 pt-16 pb-8 text-[14.5px]">
+    <footer className="bg-ink text-white/60 pt-12 pb-7 text-[14.5px]">
       <div className="shell">
-        <div className="grid gap-10 md:grid-cols-2 lg:grid-cols-4">
+        <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
           <div>
-            <Link href="/" className="inline-block mb-4">
+            <Link href="/" className="inline-block mb-3.5">
               <Wordmark light />
             </Link>
             <p className="max-w-[32ch] text-[14px]">
               Licensed and insured lawn care and landscaping for homeowners across
               Detroit and metro Detroit. {BIZ.tagline}.
             </p>
-            <div className="flex gap-4 mt-5">
+            <div className="flex gap-4 mt-4">
               <a
                 href={BIZ.social.instagram}
                 target="_blank"
@@ -36,10 +36,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="font-display text-[11px] font-bold tracking-[0.16em] uppercase text-white mb-4">
+            <h5 className="font-display text-[11px] font-bold tracking-[0.16em] uppercase text-white mb-3.5">
               Services
             </h5>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {SERVICES.map((s) => (
                 <li key={s.slug}>
                   <Link href={`/services/${s.slug}`} className="hover:text-white transition-colors">
@@ -51,10 +51,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="font-display text-[11px] font-bold tracking-[0.16em] uppercase text-white mb-4">
+            <h5 className="font-display text-[11px] font-bold tracking-[0.16em] uppercase text-white mb-3.5">
               Service Areas
             </h5>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               {CITIES.map((c) => (
                 <li key={c.slug}>
                   <Link
@@ -69,10 +69,10 @@ export default function Footer() {
           </div>
 
           <div>
-            <h5 className="font-display text-[11px] font-bold tracking-[0.16em] uppercase text-white mb-4">
+            <h5 className="font-display text-[11px] font-bold tracking-[0.16em] uppercase text-white mb-3.5">
               Contact
             </h5>
-            <ul className="space-y-2.5">
+            <ul className="space-y-2">
               <li>
                 <a href={`tel:${BIZ.phoneRaw}`} className="hover:text-white transition-colors">
                   {BIZ.phone}
@@ -103,7 +103,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-14 pt-6 border-t border-white/10 flex flex-wrap gap-4 justify-between text-[13px]">
+        <div className="mt-10 pt-5 border-t border-white/10 flex flex-wrap gap-4 justify-between text-[13px]">
           <span>
             &copy; {new Date().getFullYear()} {BIZ.legalName}. All rights reserved.
           </span>

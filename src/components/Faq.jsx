@@ -13,7 +13,7 @@ export default function Faq({ items }) {
             <button
               onClick={() => setOpen(isOpen ? -1 : i)}
               aria-expanded={isOpen}
-              className="w-full flex items-center justify-between gap-6 py-6 text-left font-display font-bold text-[18px] sm:text-[19px] tracking-[-0.01em]"
+              className="w-full flex items-center justify-between gap-6 py-[18px] text-left font-display font-bold text-[18px] sm:text-[19px] tracking-[-0.01em]"
             >
               {f.q}
               <span className="relative shrink-0 w-[22px] h-[22px]">
@@ -30,7 +30,7 @@ export default function Faq({ items }) {
                 isOpen ? "max-h-96" : "max-h-0"
               }`}
             >
-              <p className="text-stone pb-6 max-w-[68ch] text-[15.5px]">{f.a}</p>
+              <p className="text-stone pb-5 max-w-[68ch] text-[15.5px]">{f.a}</p>
             </div>
           </div>
         );

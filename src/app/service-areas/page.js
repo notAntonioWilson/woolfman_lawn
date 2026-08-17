@@ -43,7 +43,7 @@ export default function ServiceAreas() {
           />
           <CityGrid />
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/contact", label: "Check If We Cover You" }}
             secondary={{ href: "/gallery", label: "See Local Work" }}
           />
@@ -67,7 +67,7 @@ export default function ServiceAreas() {
             form with your ZIP.
           </p>
           <SectionCta
-            className="mt-8"
+            className="mt-6"
             primary={{ href: "/contact", label: "Send My Address" }}
             secondary={{ href: "/services", label: "Browse Services" }}
           />

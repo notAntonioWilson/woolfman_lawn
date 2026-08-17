@@ -38,7 +38,7 @@ export default function ServicesPage() {
       <section className="section">
         <div className="shell">
           <ServiceCards />
-          <div className="mt-10 bg-haze border-l-[3px] border-blade px-6 py-5 flex flex-wrap items-center justify-between gap-4 rounded-r-[3px]">
+          <div className="mt-7 bg-haze border-l-[3px] border-blade px-6 py-4 flex flex-wrap items-center justify-between gap-4 rounded-r-[3px]">
             <b className="font-display text-[17px] uppercase text-ink">
               Not sure what you need? Send photos and we will tell you.
             </b>
@@ -47,7 +47,7 @@ export default function ServicesPage() {
             </Link>
           </div>
           <SectionCta
-            className="mt-8"
+            className="mt-6"
             primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/gallery", label: "See Completed Jobs" }}
           />
@@ -58,7 +58,7 @@ export default function ServicesPage() {
       <ProcessSection />
       <CitiesSection />
 
-      <section className="section bg-haze">
+      <section className="section bg-haze pt-0">
         <div className="shell max-w-[900px]">
           <SectionHead
             eyebrow="Common questions"
@@ -66,7 +66,7 @@ export default function ServicesPage() {
           />
           <Faq items={FAQS.slice(0, 6)} />
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/faq", label: "All Questions" }}
           />

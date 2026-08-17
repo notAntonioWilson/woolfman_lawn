@@ -7,7 +7,7 @@ export const metadata = { title: "Page Not Found" };
 export default function NotFound() {
   return (
     <div className="section">
-      <div className="shell max-w-[700px] py-16 text-center">
+      <div className="shell max-w-[700px] py-12 text-center">
         <div className="eyebrow mb-4">404</div>
         <h1 className="text-[clamp(34px,5vw,56px)] uppercase mb-5">
           That Page Grew Over

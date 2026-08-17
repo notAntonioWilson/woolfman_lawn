@@ -77,12 +77,12 @@ export default async function CityPage({ params }) {
       />
 
       <section className="section">
-        <div className="shell grid lg:grid-cols-2 gap-12 items-center">
+        <div className="shell grid lg:grid-cols-2 gap-10 items-center">
           <div>
             <div className="eyebrow mb-3.5">{c.name}, Michigan</div>
-            <h2 className="h-sec mb-5">What We Run Most in {c.name}</h2>
+            <h2 className="h-sec mb-4">What We Run Most in {c.name}</h2>
             {c.body.map((p, i) => (
-              <p key={i} className="text-stone mb-4">
+              <p key={i} className="text-stone mb-3">
                 {p}
               </p>
             ))}
@@ -92,7 +92,7 @@ export default async function CityPage({ params }) {
             </p>
             <SectionCta
               left
-              className="mt-8"
+              className="mt-6"
               primary={{ href: "/contact", label: `Get a Free ${c.name} Estimate` }}
               secondary={{ href: "/gallery", label: "See Our Work" }}
             />
@@ -121,7 +121,7 @@ export default async function CityPage({ params }) {
           />
           <ServiceCards items={services} />
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/services", label: "All Seven Services" }}
           />
@@ -135,7 +135,7 @@ export default async function CityPage({ params }) {
           <SectionHead eyebrow="Common questions" title={`Working With Us in ${c.name}`} />
           <Faq items={cityFaqs} />
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/contact", label: "Ask About My Street" }}
             secondary={{ href: "/faq", label: "All Questions" }}
           />
@@ -151,7 +151,7 @@ export default async function CityPage({ params }) {
           />
           <CityGrid current={c.slug} />
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/service-areas", label: "All Service Areas" }}
           />

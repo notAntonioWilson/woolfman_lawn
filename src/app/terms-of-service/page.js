@@ -11,9 +11,9 @@ export const metadata = {
 const UPDATED = "August 2026";
 
 const S = ({ title, children }) => (
-  <section className="mb-10">
-    <h2 className="text-[22px] uppercase mb-3">{title}</h2>
-    <div className="space-y-3 text-stone text-[15.5px]">{children}</div>
+  <section className="mb-7">
+    <h2 className="text-[21px] uppercase mb-2.5">{title}</h2>
+    <div className="space-y-2.5 text-stone text-[15.5px]">{children}</div>
   </section>
 );
 
@@ -207,7 +207,7 @@ export default function Terms() {
           </p>
 
           <SectionCta
-            className="mt-12"
+            className="mt-9"
             primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/", label: "Back to Home" }}
           />

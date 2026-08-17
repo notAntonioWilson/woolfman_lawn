@@ -24,9 +24,9 @@ export default function Hero() {
         <div className="absolute inset-0 stripe-bg animate-drift" />
       </div>
 
-      <div className="shell relative py-16 lg:py-24 grid lg:grid-cols-[1.05fr_0.95fr] gap-12 items-center">
+      <div className="shell relative py-12 lg:py-16 grid lg:grid-cols-[1.05fr_0.95fr] gap-10 items-center">
         <div>
-          <div className="eyebrow-light mb-5">
+          <div className="eyebrow-light mb-4">
             {BIZ.tagline} &nbsp;&#124;&nbsp; Licensed &amp; Insured LLC
           </div>
 
@@ -34,7 +34,7 @@ export default function Hero() {
             Lawn Care &amp; Landscaping in <span className="text-blade">Detroit, MI</span>
           </h1>
 
-          <p className="mt-5 font-display font-semibold text-[15px] tracking-[0.02em] text-white/85">
+          <p className="mt-4 font-display font-semibold text-[15px] tracking-[0.02em] text-white/85">
             Also serving{" "}
             {others.map((c, i) => (
               <span key={c.slug}>
@@ -49,14 +49,14 @@ export default function Hero() {
             ))}
           </p>
 
-          <p className="mt-6 max-w-[56ch] text-[17px] text-white/75">
+          <p className="mt-5 max-w-[56ch] text-[16.5px] text-white/75">
             Weekly grass cutting, mulch installation, sod, yard cleanups, bush and tree trimming,
             and snow plowing for homeowners across metro Detroit. Searching for a lawn mowing
             service near you? Over 150 properties serviced, same crew every week, and everything
             written out before we start.
           </p>
 
-          <div className="mt-9 flex flex-wrap gap-3">
+          <div className="mt-7 flex flex-wrap gap-3">
             <a href={`tel:${BIZ.phoneRaw}`} className="btn btn-primary">
               Call {BIZ.phone}
             </a>
@@ -68,7 +68,7 @@ export default function Hero() {
             </Link>
           </div>
 
-          <div className="mt-10 pt-6 border-t border-white/15 flex flex-wrap gap-x-8 gap-y-3">
+          <div className="mt-7 pt-5 border-t border-white/15 flex flex-wrap gap-x-8 gap-y-2.5">
             {CHIPS.map((c) => (
               <span
                 key={c}

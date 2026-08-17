@@ -44,13 +44,13 @@ export default function Contact() {
         cta={false}
       />
 
-      <section className="pt-12">
+      <section className="pt-9">
         <div className="shell">
           <div className="flex flex-wrap gap-px bg-line border border-line">
             {items.map((i) => (
               <div
                 key={i.t}
-                className="bg-white p-6 grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[250px]"
+                className="bg-white p-5 grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[250px]"
               >
                 <h2 className="text-[18px] uppercase mb-2">{i.t}</h2>
                 {i.href ? (
@@ -66,7 +66,7 @@ export default function Contact() {
               </div>
             ))}
           </div>
-          <div className="mt-6 bg-haze border-l-[3px] border-blade px-6 py-5 rounded-r-[3px]">
+          <div className="mt-5 bg-haze border-l-[3px] border-blade px-6 py-4 rounded-r-[3px]">
             <p className="text-stone text-[15px]">
               <b className="text-ink font-display uppercase text-[15px]">Service area: </b>
               {CITIES.map((c) => c.name).join(", ")}, and the surrounding metro Detroit
@@ -74,7 +74,7 @@ export default function Contact() {
             </p>
           </div>
           <SectionCta
-            className="mt-8"
+            className="mt-6"
             primary={{ href: "#estimate", label: "Fill Out The Estimate Form" }}
             secondary={{ href: "/gallery", label: "See Our Work First" }}
           />
@@ -95,7 +95,7 @@ export default function Contact() {
           <SectionHead eyebrow="Before you call" title="Quick Answers" />
           <Faq items={FAQS.slice(0, 4)} />
           <SectionCta
-            className="mt-10"
+            className="mt-7"
             primary={{ href: "#estimate", label: "Get a Free Estimate" }}
             secondary={{ href: "/faq", label: "All Questions" }}
           />

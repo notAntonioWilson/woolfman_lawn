@@ -56,7 +56,10 @@
     @apply border-[1.5px] border-white/30 text-white hover:border-white;
   }
   .section {
-    @apply py-16 sm:py-24;
+    @apply py-12 sm:py-[68px];
+  }
+  .section-tight {
+    @apply py-10 sm:py-12;
   }
   .h-sec {
     @apply text-[clamp(30px,4vw,46px)] uppercase;
@@ -76,7 +79,7 @@
     );
   }
   .field {
-    @apply w-full h-12 border-[1.5px] border-line rounded-[3px] px-3 text-[15px] bg-white text-ink transition-colors focus:border-turf outline-none;
+    @apply w-full h-11 border-[1.5px] border-line rounded-[3px] px-3 text-[15px] bg-white text-ink transition-colors focus:border-turf outline-none;
   }
   .field-label {
     @apply block font-display text-[11px] font-bold tracking-[0.13em] uppercase text-stone mb-[7px];
