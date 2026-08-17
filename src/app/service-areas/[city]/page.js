@@ -72,7 +72,7 @@ export default async function CityPage({ params }) {
 
       <PageHeader
         crumb={`Home / Service Areas / ${c.name}`}
-        title={`Lawn Care & Landscaping in ${c.name}, MI`}
+        title={`Lawn Care, Mowing & Landscaping in ${c.name}, MI`}
         copy={c.intro}
       />
 

@@ -39,8 +39,8 @@ export default function Contact() {
 
       <PageHeader
         crumb="Home / Contact"
-        title="Get In Touch"
-        copy="Call, text, or send the form. The fastest response is a text during business hours, and most estimates go out the same day."
+        title="Free Lawn Care Estimate in Detroit, MI"
+        copy="Call, text, or send the form for grass cutting, mulch, sod, yard cleanup, bush and tree trimming, or snow removal anywhere in Detroit, Redford, Southfield, West Bloomfield, or Warren. The fastest response is a text during business hours, and most estimates go out the same day."
         cta={false}
       />
 

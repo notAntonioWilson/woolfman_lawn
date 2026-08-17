@@ -31,8 +31,8 @@ export default function ServicesPage() {
       />
       <PageHeader
         crumb="Home / Services"
-        title="Everything Your Property Needs, All Year"
-        copy="Weekly maintenance through the growing season, cleanups in fall, plowing in winter. One crew that already knows your yard."
+        title="Lawn & Landscaping Services in Detroit, MI"
+        copy="Grass cutting, mulch installation, sod, leaf and yard cleanup, bush and tree trimming, and snow plowing. Weekly lawn maintenance through the growing season, cleanups in fall, plowing all winter. One crew that already knows your yard, across Detroit, Redford, Southfield, West Bloomfield, and Warren."
       />
 
       <section className="section">

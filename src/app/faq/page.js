@@ -29,8 +29,8 @@ export default function FaqPage() {
       />
       <PageHeader
         crumb="Home / FAQ"
-        title="Questions We Get Every Week"
-        copy={`If yours is not here, text ${BIZ.phone} and Keonte will answer it directly.`}
+        title="Lawn Care Questions From Detroit Homeowners"
+        copy={`Estimates, scheduling, contracts, insurance, and what our grass cutting, mulch, sod, cleanup, and snow removal service actually covers. If your question is not here, text ${BIZ.phone} and Keonte will answer it directly.`}
       />
 
       <section className="section">

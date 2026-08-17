@@ -29,8 +29,8 @@ export default function Gallery() {
       />
       <PageHeader
         crumb="Home / Gallery"
-        title="Recent Work Around Metro Detroit"
-        copy="Cut and edged lawns, fresh mulch beds, new sod, full cleanups, and cleared driveways. Every photo here is a real property we serviced."
+        title="Lawn Care & Landscaping Photos in Metro Detroit"
+        copy="Cut and edged lawns, fresh mulch beds, new sod installs, full yard cleanups, trimmed hedges, and plowed driveways. Every photo here is a real Detroit, Redford, Southfield, West Bloomfield, or Warren property we serviced."
       />
 
       <section className="section">

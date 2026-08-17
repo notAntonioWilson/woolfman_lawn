@@ -457,20 +457,32 @@ export function QuoteSection({
 }
 
 /* ---------- page header ---------- */
-export function PageHeader({ crumb, title, copy, cta = true }) {
+export function PageHeader({ crumb, title, copy, cta = true, center = false }) {
   return (
     <div className="bg-haze border-b border-line pt-14 pb-12">
-      <div className="shell">
+      <div className={`shell ${center ? "text-center" : ""}`}>
         {crumb && (
           <div className="font-display text-[11px] font-bold tracking-[0.15em] uppercase text-stone mb-5">
             {crumb}
           </div>
         )}
-        <h1 className="text-[clamp(34px,5.4vw,62px)] uppercase max-w-[19ch]">{title}</h1>
-        {copy && <p className="text-stone text-[17px] mt-5 max-w-[58ch]">{copy}</p>}
+        <h1
+          className={`text-[clamp(34px,5.4vw,62px)] uppercase max-w-[19ch] ${
+            center ? "mx-auto" : ""
+          }`}
+        >
+          {title}
+        </h1>
+        {copy && (
+          <p
+            className={`text-stone text-[17px] mt-5 max-w-[62ch] ${center ? "mx-auto" : ""}`}
+          >
+            {copy}
+          </p>
+        )}
         {cta && (
           <SectionCta
-            className="mt-8"
+            className={`mt-8 ${center ? "justify-center" : ""}`}
             primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/gallery", label: "See Our Work" }}
           />

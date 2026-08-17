@@ -88,6 +88,7 @@ export const GALLERY = Array.from({ length: 15 }, (_, i) => ({
 export const SERVICES = [
   {
     slug: "lawn-maintenance",
+    h1: "Lawn Mowing & Maintenance in Detroit, MI",
     name: "Lawn Maintenance",
     tag: "Most requested",
     season: "April to October",
@@ -96,7 +97,7 @@ export const SERVICES = [
     card:
       "Same crew, same day each week, so you always know when we are coming. We cut, edge, line trim, and clear every walk and driveway before we pull away. Call or send the form and we will come take a look.",
     intro:
-      "Reliable weekly and biweekly lawn care for homeowners across Detroit and the surrounding metro. Same crew, same day, every week.",
+      "Reliable weekly and biweekly lawn mowing, grass cutting, edging, and trimming for homeowners across Detroit, Redford, Southfield, West Bloomfield, and Warren. Same crew, same day, every week.",
     body: [
       "Most lawns in our service area take under thirty minutes, and we run tight routes so your yard gets cut on the same day each week. You do not have to be home and you do not have to chase us for a schedule.",
       "Every visit ends the same way. Beds and walks get edged, fences and posts get line trimmed, and the driveway, walkway, and porch get blown off. We never leave clippings on your concrete.",
@@ -112,6 +113,7 @@ export const SERVICES = [
   },
   {
     slug: "mulching",
+    h1: "Mulch Installation & Bed Edging in Detroit, MI",
     name: "Mulching",
     tag: "Best value upgrade",
     season: "April to June",
@@ -120,7 +122,7 @@ export const SERVICES = [
     card:
       "Fresh mulch is the fastest way to change how a property looks from the street. We pull weeds, cut a crisp edge, and lay mulch even so beds hold color and stay clean. Send a photo and we will tell you what it needs.",
     intro:
-      "The single fastest upgrade to how a property looks from the street, and one of the most requested jobs we do every spring.",
+      "Professional mulch installation, weed pulling, and crisp bed edging across metro Detroit. The single fastest upgrade to how a property looks from the street, and one of the most requested landscaping jobs we do every spring.",
     body: [
       "We start by hand pulling existing weeds and clearing out old debris, then cut a crisp spade edge along every bed line. That edge is what separates a professional mulch job from a homeowner one.",
       "Mulch goes down at an even two to three inch depth. Too thin and the color fades by July. Too thick and it starves the plants. We get it right and haul every bag and scrap off your property.",
@@ -136,6 +138,7 @@ export const SERVICES = [
   },
   {
     slug: "sod-installation",
+    h1: "Sod Installation & New Lawn Install in Detroit, MI",
     name: "Sod Installation",
     tag: null,
     season: "April to October",
@@ -144,7 +147,7 @@ export const SERVICES = [
     card:
       "Bare spots, mud runs, or a full front yard replacement. We grade the base, lay fresh sod seam to seam, roll it flat, and walk you through the first two weeks of watering. Free estimate either way.",
     intro:
-      "Bare patches, mud runs, or a full front yard replacement. We install fresh sod and set you up so it takes.",
+      "New sod installation and lawn replacement for bare patches, mud runs, and full front yards across Detroit, Redford, Southfield, West Bloomfield, and Warren. Graded, laid, rolled, and ready to water the same day.",
     body: [
       "The install is only half the job. We remove the old turf and debris first, then grade and prep the soil so the new sod sits flat and makes contact everywhere. Skipping that step is why most sod jobs fail.",
       "Sod goes down tight, seam to seam, then gets rolled so the roots press into the soil. You can water the same day we finish.",
@@ -160,6 +163,7 @@ export const SERVICES = [
   },
   {
     slug: "leaf-removal",
+    h1: "Leaf Removal & Fall Yard Cleanup in Detroit, MI",
     name: "Leaf Removal",
     tag: "Fall",
     season: "October to November",
@@ -168,7 +172,7 @@ export const SERVICES = [
     card:
       "We clear the lawn, beds, window wells, and curb line, then haul it all off. Book one cleanup or set a recurring fall schedule so leaves never get ahead of you. Ask us for a free estimate.",
     intro:
-      "A full fall cleanup that clears the whole property, not just the middle of the lawn.",
+      "Full fall yard cleanup and leaf removal across metro Detroit. We clear the lawn, beds, window wells, and curb line, then haul every bag off your property.",
     body: [
       "We clear the lawn, the beds, the window wells, and the curb line. Leaves left in beds over winter mat down and kill what is underneath, so we get those too.",
       "Everything gets bagged and hauled off your property. Nothing gets blown into the street or left at the curb for you to deal with.",
@@ -184,6 +188,7 @@ export const SERVICES = [
   },
   {
     slug: "snow-removal",
+    h1: "Snow Removal & Driveway Plowing in Detroit, MI",
     name: "Snow Removal",
     tag: "Winter",
     season: "November to March",
@@ -192,7 +197,7 @@ export const SERVICES = [
     card:
       "Seasonal contracts and per storm clearing. We run routes overnight so your drive and walk are open before you leave for work, with salt available for ice. Get on the route before winter.",
     intro:
-      "Seasonal contracts and per storm clearing across metro Detroit, run overnight so your drive is open before work.",
+      "Snow plowing, shoveling, and salting for driveways, walkways, and steps across Detroit, Redford, Southfield, West Bloomfield, and Warren. Seasonal contracts and per storm clearing, run overnight so your drive is open before work.",
     body: [
       "We run our routes overnight and into the early morning. The goal is simple: your driveway and walk are open before you need to leave.",
       "We clear the full driveway including the apron at the street, plus walkways and steps. Salt is available on request for ice on walks and porches.",
@@ -208,6 +213,7 @@ export const SERVICES = [
   },
   {
     slug: "bush-trimming",
+    h1: "Bush Trimming & Hedge Shaping in Detroit, MI",
     name: "Bush Trimming",
     tag: null,
     season: "May to September",
@@ -216,7 +222,7 @@ export const SERVICES = [
     card:
       "Overgrown shrubs hide your house. We shape hedges and foundation plantings back to a clean line, clear the dead growth, and sweep the beds behind us. Send a photo and we will take a look.",
     intro:
-      "Overgrown shrubs hide a house. We shape them back to a clean line and clean up behind ourselves.",
+      "Hedge trimming, shrub shaping, and overgrown bush removal for homeowners across metro Detroit. Overgrown shrubs hide a house. We shape them back to a clean line and clean up behind ourselves.",
     body: [
       "Foundation plantings and hedges get shaped back to an even line so the house shows again. We work to the shape of the plant, not just a flat cut across the top.",
       "Dead growth gets cleared out of the middle so the shrub can fill back in properly next season.",
@@ -232,6 +238,7 @@ export const SERVICES = [
   },
   {
     slug: "tree-trimming",
+    h1: "Tree Trimming & Limb Removal in Detroit, MI",
     name: "Tree Trimming",
     tag: null,
     season: "Year round",
@@ -240,7 +247,7 @@ export const SERVICES = [
     card:
       "Limb up for clearance, pull deadwood, and shape small to mid size trees. If a job needs a climber or a bucket truck we will tell you straight. Free assessment either way, just ask.",
     intro:
-      "Clearance work, deadwood removal, and shaping on small to mid size trees around your property.",
+      "Tree trimming, limb removal, and deadwood clearing on small to mid size trees across Detroit and the surrounding metro. Clearance over driveways and rooflines, plus shaping and thinning.",
     body: [
       "Low limbs over a driveway or scraping a roofline get taken back for clearance. Deadwood gets pulled before it comes down on its own.",
       "Shaping and thinning lets light through to the lawn underneath, which matters more than most homeowners expect if you have thin grass in the shade.",
@@ -264,7 +271,7 @@ export const CITIES = [
     zips: "48227, 48228, 48219, 48235, 48221",
     blurb: "Our home base. Same week service on most streets.",
     intro:
-      "Woolfman Lawn Services is based in Detroit and most of our routes run right here. If you are inside the city, we can usually get you on the schedule the same week.",
+      "Woolfman Lawn Services is a Detroit based lawn care and landscaping company, and most of our mowing routes run right here in the city. Grass cutting, mulch, sod, yard cleanups, and snow plowing, usually available the same week.",
     body: [
       "Detroit lots come in every shape. Narrow city lots on the west side, double lots where a neighbor came down, corner lots with twice the edging. We assess by what is actually there rather than working off a map.",
       "We run weekly and biweekly maintenance across the west side and northwest Detroit, plus mulch, sod, and full cleanups on request. In winter the same routes turn into snow routes.",
@@ -277,7 +284,7 @@ export const CITIES = [
     zips: "48239, 48240",
     blurb: "Weekly and biweekly maintenance routes.",
     intro:
-      "Redford sits right on our main route out of Detroit, which means tight scheduling and a crew that is already in the area.",
+      "Looking for a lawn service in Redford, MI? Redford sits right on our main route out of Detroit, which means weekly grass cutting, leaf removal, and snow plowing from a crew that is already in the area.",
     body: [
       "Most Redford properties are consistent lot sizes with mature trees, which makes them straightforward to assess and quick to service on a weekly rotation.",
       "Fall is the busy season out here. Those mature trees drop a lot, so recurring leaf removal through October and November is worth setting up before the first drop.",
@@ -290,7 +297,7 @@ export const CITIES = [
     zips: "48033, 48034, 48075, 48076",
     blurb: "Mulch, sod, and full property cleanups.",
     intro:
-      "In Southfield we do a lot of bed work. Mulch, edging, and shrub shaping on properties where the landscaping was put in well and just needs upkeep.",
+      "Lawn care and landscaping in Southfield, MI. We do a lot of bed work out here: mulch installation, crisp edging, shrub shaping, and sod repair on properties where the landscaping was put in well and just needs upkeep.",
     body: [
       "Southfield homes tend to have real bed structure around the foundation, which means a fresh spade edge and even mulch changes the whole look of the property for a fraction of what people expect.",
       "We also handle sod repair on the irrigated lawns out here, where a bad zone or heavy shade has thinned a section out.",
@@ -303,7 +310,7 @@ export const CITIES = [
     zips: "48322, 48323, 48324",
     blurb: "Larger lots, bush and tree trimming.",
     intro:
-      "West Bloomfield properties run larger, with more trees and more bed line. That changes what a yard needs and how we approach it.",
+      "Lawn maintenance and landscaping in West Bloomfield, MI. Properties out here run larger, with more trees and more bed line, which changes what a yard needs for mowing, bush trimming, and tree work.",
     body: [
       "On bigger lots the trimming work matters as much as the cut. Shrub shaping, clearance limbs over drives, and deadwood removal keep a large property from looking neglected even when the lawn is perfect.",
       "We assess larger lots in person rather than off a photo, so nothing moves later.",
@@ -316,7 +323,7 @@ export const CITIES = [
     zips: "48088, 48089, 48091, 48092, 48093",
     blurb: "Seasonal contracts and snow removal.",
     intro:
-      "Warren is where a lot of our seasonal work lives. Full year coverage from the first cut in April through the last plow in March.",
+      "Lawn care and snow removal in Warren, MI. This is where a lot of our seasonal work lives, with full year coverage from the first grass cutting in April through the last driveway plow in March.",
     body: [
       "Consistent lot sizes across Warren make it easy to run a tight weekly route, which is why we can hold a reliable service day out here through the whole season.",
       "Snow contracts fill up first in Warren. If you want route priority for winter, set it up before the first storm rather than after.",

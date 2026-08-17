@@ -49,9 +49,10 @@ export default function Hero() {
             ))}
           </p>
 
-          <p className="mt-6 max-w-[54ch] text-[17px] text-white/75">
-            Weekly lawn maintenance, mulch, sod, cleanups, and snow removal for homeowners across
-            metro Detroit. Over 150 properties serviced, same crew every week, and everything
+          <p className="mt-6 max-w-[56ch] text-[17px] text-white/75">
+            Weekly grass cutting, mulch installation, sod, yard cleanups, bush and tree trimming,
+            and snow plowing for homeowners across metro Detroit. Searching for a lawn mowing
+            service near you? Over 150 properties serviced, same crew every week, and everything
             written out before we start.
           </p>
 

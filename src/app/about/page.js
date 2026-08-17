@@ -42,9 +42,10 @@ export default function About() {
       />
 
       <PageHeader
+        center
         crumb="Home / About"
-        title="A Local Crew That Actually Shows Up"
-        copy={`Woolfman Lawn Services is owned and run by ${BIZ.ownerFull}, out of Detroit, Michigan.`}
+        title="A Detroit Lawn Care Company That Shows Up"
+        copy={`Woolfman Lawn Services is a licensed and insured lawn care and landscaping company owned and run by ${BIZ.ownerFull} out of Detroit, Michigan. We handle grass cutting, mulch, sod, yard cleanups, and snow plowing for homeowners in Detroit, Redford, Southfield, West Bloomfield, and Warren.`}
       />
 
       <section className="section">

@@ -28,9 +28,10 @@ export default function ServiceAreas() {
         ])}
       />
       <PageHeader
+        center
         crumb="Home / Service Areas"
-        title="Lawn Care Across Metro Detroit"
-        copy="Detroit is home base. We run weekly routes out through Redford, Southfield, West Bloomfield, and Warren, plus the streets in between."
+        title="Lawn Care & Landscaping Near You in Metro Detroit"
+        copy="Detroit is home base. We run weekly lawn mowing, mulch, sod, yard cleanup, and snow removal routes out through Redford, Southfield, West Bloomfield, and Warren, plus the streets in between. Looking for a lawn service near you in metro Detroit? Start here."
       />
 
       <section className="section">
