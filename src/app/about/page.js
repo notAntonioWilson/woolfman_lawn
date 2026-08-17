@@ -91,6 +91,7 @@ export default function About() {
               why the standard does not slip when the schedule gets full.
             </p>
             <SectionCta
+              left
               className="mt-7"
               primary={{ href: "/contact", label: "Work With Keonte" }}
               secondary={{ href: "/gallery", label: "See His Work" }}
@@ -125,6 +126,7 @@ export default function About() {
               {BIZ.tagline}.
             </p>
             <SectionCta
+              left
               className="mt-7"
               primary={{ href: "/contact", label: "Get a Free Estimate" }}
               secondary={{ href: "/services", label: "What We Offer" }}
@@ -168,7 +170,7 @@ export default function About() {
             title="Licensed, Insured, And Local"
             copy="The paperwork matters. So does knowing who is on your property."
           />
-          <div className="grid sm:grid-cols-3 gap-px bg-line border border-line">
+          <div className="flex flex-wrap gap-px bg-line border border-line">
             {[
               {
                 t: "Licensed LLC",
@@ -183,7 +185,10 @@ export default function About() {
                 d: "We live and work here. Our routes run out of Detroit through the surrounding metro.",
               },
             ].map((x) => (
-              <div key={x.t} className="bg-white p-7">
+              <div
+                key={x.t}
+                className="bg-white p-7 grow shrink-0 basis-full sm:basis-[280px]"
+              >
                 <h3 className="text-[19px] uppercase mb-2.5">{x.t}</h3>
                 <p className="text-stone text-[14.5px]">{x.d}</p>
               </div>

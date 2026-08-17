@@ -7,7 +7,6 @@ const EMPTY = {
   name: "",
   phone: "",
   email: "",
-  address: "",
   city: "",
   service: "",
   timing: "",
@@ -26,6 +25,10 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
   async function submit() {
     if (!form.name.trim() || !form.phone.trim()) {
       setError("Please add your name and a phone number so we can get back to you.");
+      return;
+    }
+    if (!/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(form.email.trim())) {
+      setError("Please add a valid email address so we can send your estimate.");
       return;
     }
     setError("");
@@ -107,16 +110,17 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
           />
         </div>
         <div>
-          <label htmlFor="qf-address" className="field-label">
-            Property address or ZIP
+          <label htmlFor="qf-email" className="field-label">
+            Email
           </label>
           <input
-            id="qf-address"
+            id="qf-email"
             className="field"
-            value={form.address}
-            onChange={set("address")}
-            placeholder="48227"
-            autoComplete="street-address"
+            value={form.email}
+            onChange={set("email")}
+            placeholder="you@email.com"
+            inputMode="email"
+            autoComplete="email"
           />
         </div>
         <div>
@@ -179,21 +183,6 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
               </button>
             ))}
           </div>
-        </div>
-
-        <div className="sm:col-span-2">
-          <label htmlFor="qf-email" className="field-label">
-            Email <span className="text-stone/60 font-semibold tracking-normal">optional</span>
-          </label>
-          <input
-            id="qf-email"
-            className="field"
-            value={form.email}
-            onChange={set("email")}
-            placeholder="you@email.com"
-            inputMode="email"
-            autoComplete="email"
-          />
         </div>
 
         {!compact && (

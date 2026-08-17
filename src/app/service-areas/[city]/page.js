@@ -91,6 +91,7 @@ export default async function CityPage({ params }) {
               150 properties serviced across the metro.
             </p>
             <SectionCta
+              left
               className="mt-8"
               primary={{ href: "/contact", label: `Get a Free ${c.name} Estimate` }}
               secondary={{ href: "/gallery", label: "See Our Work" }}

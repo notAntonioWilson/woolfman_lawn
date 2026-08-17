@@ -80,6 +80,7 @@ export default async function ServiceDetail({ params }) {
             <div className="eyebrow mt-7">Season &middot; {s.season}</div>
 
             <SectionCta
+              left
               className="mt-7"
               primary={{ href: "/contact", label: `Get a Free Estimate` }}
               secondary={{ href: "/gallery", label: "See This Work" }}
@@ -116,12 +117,12 @@ export default async function ServiceDetail({ params }) {
             title={`${s.name} Across Metro Detroit`}
             copy="Detroit is home base, and we run this service through every city on our route."
           />
-          <div className="grid sm:grid-cols-2 lg:grid-cols-5 gap-px bg-line border border-line">
+          <div className="flex flex-wrap gap-px bg-line border border-line">
             {CITIES.map((c) => (
               <Link
                 key={c.slug}
                 href={`/service-areas/${c.slug}`}
-                className="bg-white p-6 hover:bg-haze transition-colors"
+                className="bg-white p-6 grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[190px] hover:bg-haze transition-colors"
               >
                 <h3 className="text-[18px] uppercase mb-2">{c.name}</h3>
                 <p className="text-stone text-[13.5px]">{c.blurb}</p>

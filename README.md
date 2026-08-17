@@ -48,7 +48,7 @@ Payload shape sent to the webhook:
 {
   "source": "woolfmanlawnservices.com",
   "name": "", "phone": "", "email": "",
-  "address": "", "city": "",
+  "city": "",
   "service": "", "timing": "",
   "preferredContact": "Text | Call | Email",
   "heardAbout": "", "message": "",
@@ -58,7 +58,7 @@ Payload shape sent to the webhook:
 }
 ```
 
-Map those field names straight onto Airtable columns.
+Map those field names straight onto Airtable columns. `name`, `phone`, and `email` are required and validated both client and server side; everything else is optional.
 
 ---
 

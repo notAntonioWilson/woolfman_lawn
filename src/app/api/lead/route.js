@@ -23,10 +23,11 @@ export async function POST(request) {
 
   const name = String(data.name || "").trim();
   const phone = String(data.phone || "").trim();
+  const email = String(data.email || "").trim();
 
-  if (!name || !phone) {
+  if (!name || !phone || !email) {
     return NextResponse.json(
-      { ok: false, error: "Name and phone number are required." },
+      { ok: false, error: "Name, phone number, and email are required." },
       { status: 422 }
     );
   }
@@ -38,8 +39,7 @@ export async function POST(request) {
     source: "woolfmanlawnservices.com",
     name,
     phone,
-    email: String(data.email || "").trim(),
-    address: String(data.address || "").trim(),
+    email,
     city: String(data.city || "").trim(),
     service: String(data.service || "").trim(),
     timing: String(data.timing || "").trim(),

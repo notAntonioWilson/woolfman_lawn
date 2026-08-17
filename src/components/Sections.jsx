@@ -33,10 +33,11 @@ export function SectionCta({
   primary = { href: "/contact", label: "Get a Free Estimate" },
   secondary = { href: "/gallery", label: "See Our Work" },
   light = false,
+  left = false,
   className = "",
 }) {
   return (
-    <div className={`flex flex-wrap gap-3 ${className}`}>
+    <div className={`flex flex-wrap gap-3 ${left ? "" : "justify-center"} ${className}`}>
       <Link href={primary.href} className="btn btn-primary">
         {primary.label}
       </Link>
@@ -172,19 +173,19 @@ export function OnTheJob() {
 /* ---------- services grid ---------- */
 export function ServiceCards({ items = SERVICES, heading = true }) {
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line">
+    <div className="flex flex-wrap gap-px bg-line border border-line">
       {items.map((s) => (
         <Link
           key={s.slug}
           href={`/services/${s.slug}`}
-          className="group bg-white flex flex-col hover:bg-haze transition-colors"
+          className="group bg-white flex flex-col grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[255px] hover:bg-haze transition-colors"
         >
           <div className="relative aspect-[16/10] overflow-hidden bg-turf-dk">
             <Image
               src={s.photo}
               alt={`${s.name} in Detroit, Michigan`}
               fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
+              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
               className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               unoptimized
             />
@@ -194,14 +195,14 @@ export function ServiceCards({ items = SERVICES, heading = true }) {
               </span>
             )}
           </div>
-          <div className="p-7 flex flex-col flex-1">
+          <div className="p-6 flex flex-col flex-1">
             {heading ? (
-              <h3 className="text-[21px] uppercase mb-2.5">{s.name}</h3>
+              <h3 className="text-[19px] uppercase mb-2">{s.name}</h3>
             ) : (
-              <div className="font-display font-extrabold text-[21px] uppercase mb-2.5">{s.name}</div>
+              <div className="font-display font-extrabold text-[19px] uppercase mb-2">{s.name}</div>
             )}
-            <p className="text-stone text-[14.5px] flex-1">{s.card}</p>
-            <span className="mt-5 font-display text-[12.5px] font-bold tracking-[0.1em] uppercase text-turf">
+            <p className="text-stone text-[14px] flex-1">{s.card}</p>
+            <span className="mt-4 font-display text-[12px] font-bold tracking-[0.1em] uppercase text-turf">
               More Info &rarr;
             </span>
           </div>
@@ -235,12 +236,12 @@ export function ServicesSection() {
 export function CityGrid({ current = null }) {
   const list = current ? CITIES.filter((c) => c.slug !== current) : CITIES;
   return (
-    <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-line border border-line">
+    <div className="flex flex-wrap gap-px bg-line border border-line">
       {list.map((c) => (
         <Link
           key={c.slug}
           href={`/service-areas/${c.slug}`}
-          className="bg-white p-7 hover:bg-haze transition-colors group"
+          className="bg-white p-7 grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[300px] hover:bg-haze transition-colors group"
         >
           <div className="flex items-baseline gap-2 mb-2">
             <h3 className="text-[20px] uppercase">{c.name}</h3>
@@ -305,6 +306,7 @@ export function ProcessSection() {
             </a>
           </div>
           <SectionCta
+            left
             className="mt-8"
             primary={{ href: "/contact", label: "Start My Estimate" }}
             secondary={{ href: "/gallery", label: "See The Proof" }}
@@ -338,9 +340,12 @@ export function PromisesSection() {
           title="What You Get Every Single Visit"
           copy="We are two years in and building this on word of mouth. That only works if the standard never slips."
         />
-        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-px bg-white/10 border border-white/10">
+        <div className="flex flex-wrap gap-px bg-white/10 border border-white/10">
           {PROMISES.map((p) => (
-            <div key={p.t} className="bg-turf-dk p-7">
+            <div
+              key={p.t}
+              className="bg-turf-dk p-7 grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[300px]"
+            >
               <h3 className="text-[18px] uppercase text-white mb-2.5">{p.t}</h3>
               <p className="text-white/65 text-[14.5px]">{p.d}</p>
             </div>
@@ -399,6 +404,7 @@ export function OwnerSection() {
             neighbors expected.
           </p>
           <SectionCta
+            left
             className="mt-7"
             primary={{ href: "/about", label: "Read Our Full Story" }}
             secondary={{ href: "/contact", label: "Get a Free Estimate" }}
@@ -445,6 +451,7 @@ export function QuoteSection({
 
           <SectionCta
             light
+            left
             className="mt-8"
             primary={{ href: "/gallery", label: "See Our Work First" }}
             secondary={{ href: "/services", label: "Browse Services" }}
@@ -482,7 +489,8 @@ export function PageHeader({ crumb, title, copy, cta = true, center = false }) {
         )}
         {cta && (
           <SectionCta
-            className={`mt-8 ${center ? "justify-center" : ""}`}
+            left={!center}
+            className="mt-8"
             primary={{ href: "/contact", label: "Get a Free Estimate" }}
             secondary={{ href: "/gallery", label: "See Our Work" }}
           />

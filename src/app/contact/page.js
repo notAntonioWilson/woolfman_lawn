@@ -46,9 +46,12 @@ export default function Contact() {
 
       <section className="pt-12">
         <div className="shell">
-          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-px bg-line border border-line">
+          <div className="flex flex-wrap gap-px bg-line border border-line">
             {items.map((i) => (
-              <div key={i.t} className="bg-white p-6">
+              <div
+                key={i.t}
+                className="bg-white p-6 grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[250px]"
+              >
                 <h2 className="text-[18px] uppercase mb-2">{i.t}</h2>
                 {i.href ? (
                   <a

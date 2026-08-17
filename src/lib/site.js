@@ -95,7 +95,7 @@ export const SERVICES = [
     short:
       "Weekly or biweekly cutting, edging, and trimming, with every hard surface blown off before we leave.",
     card:
-      "Same crew, same day each week, so you always know when we are coming. We cut, edge, line trim, and clear every walk and driveway before we pull away. Call or send the form and we will come take a look.",
+      "Weekly or biweekly grass cutting, edging, and trimming. Same crew, same day, every walk and driveway cleared before we leave.",
     intro:
       "Reliable weekly and biweekly lawn mowing, grass cutting, edging, and trimming for homeowners across Detroit, Redford, Southfield, West Bloomfield, and Warren. Same crew, same day, every week.",
     body: [
@@ -120,7 +120,7 @@ export const SERVICES = [
     short:
       "Clean spade edges and fresh mulch, laid at an even depth so beds hold color all season.",
     card:
-      "Fresh mulch is the fastest way to change how a property looks from the street. We pull weeds, cut a crisp edge, and lay mulch even so beds hold color and stay clean. Send a photo and we will tell you what it needs.",
+      "The fastest way to change how a property looks from the street. Weeds pulled, crisp spade edge, mulch laid even.",
     intro:
       "Professional mulch installation, weed pulling, and crisp bed edging across metro Detroit. The single fastest upgrade to how a property looks from the street, and one of the most requested landscaping jobs we do every spring.",
     body: [
@@ -145,7 +145,7 @@ export const SERVICES = [
     short:
       "New lawn graded, laid tight, and rolled flat, ready to water the same day we finish.",
     card:
-      "Bare spots, mud runs, or a full front yard replacement. We grade the base, lay fresh sod seam to seam, roll it flat, and walk you through the first two weeks of watering. Free estimate either way.",
+      "Bare spots, mud runs, or a full front yard. Graded, laid seam to seam, rolled flat, ready to water same day.",
     intro:
       "New sod installation and lawn replacement for bare patches, mud runs, and full front yards across Detroit, Redford, Southfield, West Bloomfield, and Warren. Graded, laid, rolled, and ready to water the same day.",
     body: [
@@ -170,7 +170,7 @@ export const SERVICES = [
     short:
       "Full property cleanup, beds and curb line included, with everything hauled off your lot.",
     card:
-      "We clear the lawn, beds, window wells, and curb line, then haul it all off. Book one cleanup or set a recurring fall schedule so leaves never get ahead of you. Ask us for a free estimate.",
+      "Lawn, beds, window wells, and curb line cleared and hauled off. One cleanup or a recurring fall schedule.",
     intro:
       "Full fall yard cleanup and leaf removal across metro Detroit. We clear the lawn, beds, window wells, and curb line, then haul every bag off your property.",
     body: [
@@ -195,7 +195,7 @@ export const SERVICES = [
     short:
       "Driveways, walks, and salt, cleared overnight so you can get out in the morning.",
     card:
-      "Seasonal contracts and per storm clearing. We run routes overnight so your drive and walk are open before you leave for work, with salt available for ice. Get on the route before winter.",
+      "Driveways, walks, and steps cleared overnight so you can get out in the morning. Salt on request. Seasonal or per storm.",
     intro:
       "Snow plowing, shoveling, and salting for driveways, walkways, and steps across Detroit, Redford, Southfield, West Bloomfield, and Warren. Seasonal contracts and per storm clearing, run overnight so your drive is open before work.",
     body: [
@@ -220,7 +220,7 @@ export const SERVICES = [
     short:
       "Hedges and foundation shrubs shaped back to a clean line, with beds swept and debris hauled.",
     card:
-      "Overgrown shrubs hide your house. We shape hedges and foundation plantings back to a clean line, clear the dead growth, and sweep the beds behind us. Send a photo and we will take a look.",
+      "Hedges and foundation shrubs shaped back to a clean line. Dead growth cleared, beds swept, clippings hauled.",
     intro:
       "Hedge trimming, shrub shaping, and overgrown bush removal for homeowners across metro Detroit. Overgrown shrubs hide a house. We shape them back to a clean line and clean up behind ourselves.",
     body: [
@@ -245,7 +245,7 @@ export const SERVICES = [
     short:
       "Low limbs, deadwood, and clearance over driveways and rooflines on small to mid size trees.",
     card:
-      "Limb up for clearance, pull deadwood, and shape small to mid size trees. If a job needs a climber or a bucket truck we will tell you straight. Free assessment either way, just ask.",
+      "Clearance over drives and rooflines, deadwood pulled, small to mid size trees shaped and thinned.",
     intro:
       "Tree trimming, limb removal, and deadwood clearing on small to mid size trees across Detroit and the surrounding metro. Clearance over driveways and rooflines, plus shaping and thinning.",
     body: [
