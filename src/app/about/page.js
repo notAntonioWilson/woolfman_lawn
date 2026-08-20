@@ -140,7 +140,6 @@ export default function About() {
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
-                unoptimized
               />
             </div>
             <div className="relative aspect-[16/10] rounded-[4px] overflow-hidden bg-turf-dk">
@@ -150,7 +149,6 @@ export default function About() {
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
-                unoptimized
               />
             </div>
           </div>

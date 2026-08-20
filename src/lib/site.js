@@ -47,12 +47,12 @@ export const STATS = [
 
 /* ------------------------------------------------------------
    PHOTOS
-   Placeholders resolve to picsum.photos so nothing is ever
-   broken. To swap in a real photo: drop the file in
-   /public/images/ and change src to "/images/your-file.jpg".
+   Every image on the site is a real photo of real work. There are
+   no stock or generated images anywhere, by design. A service with
+   no photo yet has photo: null and renders a Coming Soon panel
+   instead. To add one: drop the file in /public/images/ and point
+   the slot at "/images/your-file.jpg".
    ------------------------------------------------------------ */
-const ph = (seed, w = 1600, h = 1000) =>
-  `https://picsum.photos/seed/wf-${seed}/${w}/${h}`;
 
 export const PHOTOS = {
   hero: {
@@ -71,10 +71,19 @@ export const PHOTOS = {
     src: "/images/owner-wide.jpg",
     alt: "Keonte Woolf on a lawn care job in metro Detroit",
   },
-  aboutTruck: { src: ph("truck", 1600, 1100), alt: "Woolfman Lawn Services truck and trailer" },
-  aboutCrew: { src: ph("crew", 1600, 1100), alt: "The Woolfman Lawn Services crew on a job" },
-  areaMap: { src: ph("area", 1600, 1100), alt: "Metro Detroit neighborhood served by Woolfman Lawn Services" },
-  cta: { src: ph("cta", 2000, 900), alt: "Cut and edged front lawn in metro Detroit" },
+  aboutTruck: {
+    src: "/images/about-truck.jpg",
+    alt: "Woolfman Lawn Services truck parked on a job in metro Detroit",
+  },
+  aboutCrew: {
+    src: "/images/about-crew.jpg",
+    alt: "Woolfman Lawn Services crew trimming on a Detroit property",
+  },
+  areaMap: {
+    src: "/images/area.jpg",
+    alt: "Residential property serviced by Woolfman Lawn Services in metro Detroit",
+  },
+  cta: { src: "/images/gal-02.jpg", alt: "Cut and edged front lawn in metro Detroit" },
 };
 
 export const PEEK = [
@@ -86,13 +95,13 @@ export const PEEK = [
 ];
 
 export const ONJOB = Array.from({ length: 12 }, (_, i) => ({
-  src: ph(`job-${i + 1}`, 900, 900),
+  src: `/images/job-${String(i + 1).padStart(2, "0")}.jpg`,
   alt: "Woolfman Lawn Services on the job in metro Detroit",
 }));
 
 export const GALLERY = Array.from({ length: 15 }, (_, i) => ({
-  src: ph(`gal-${i + 1}`, 1200, 900),
-  alt: "Completed landscaping job in metro Detroit",
+  src: `/images/gal-${String(i + 1).padStart(2, "0")}.jpg`,
+  alt: "Completed lawn care and landscaping job in metro Detroit",
 }));
 
 /* ------------------------------------------------------------ */
@@ -121,7 +130,8 @@ export const SERVICES = [
       "Line trim fences, posts, and obstacles",
       "Blow off drive, walk, and porch",
     ],
-    photo: "/images/svc-lawn.jpg",
+    photo: "/images/cover-lawn-maintenance.jpg",
+    photoTall: "/images/cover-lawn-maintenance-tall.jpg",
   },
   {
     slug: "mulching",
@@ -146,7 +156,7 @@ export const SERVICES = [
       "Even two to three inch mulch depth",
       "Haul away all debris and packaging",
     ],
-    photo: ph("svc-mulch", 1400, 1000),
+    photo: null,
   },
   {
     slug: "sod-installation",
@@ -171,7 +181,7 @@ export const SERVICES = [
       "Lay and roll fresh sod",
       "Written watering schedule for the first two weeks",
     ],
-    photo: ph("svc-sod", 1400, 1000),
+    photo: null,
   },
   {
     slug: "leaf-removal",
@@ -196,7 +206,7 @@ export const SERVICES = [
       "Bag and haul everything off site",
       "One time or recurring schedule",
     ],
-    photo: ph("svc-leaf", 1400, 1000),
+    photo: null,
   },
   {
     slug: "snow-removal",
@@ -221,7 +231,7 @@ export const SERVICES = [
       "Salt available on request",
       "Seasonal contract or per storm",
     ],
-    photo: ph("svc-snow", 1400, 1000),
+    photo: null,
   },
   {
     slug: "bush-trimming",
@@ -246,7 +256,8 @@ export const SERVICES = [
       "Sweep beds, walks, and drive",
       "Haul away all clippings",
     ],
-    photo: "/images/svc-bush.jpg",
+    photo: "/images/cover-bush-trimming.jpg",
+    photoTall: "/images/cover-bush-trimming-tall.jpg",
   },
   {
     slug: "tree-trimming",
@@ -271,7 +282,7 @@ export const SERVICES = [
       "Shaping and thinning",
       "Full debris haul off",
     ],
-    photo: ph("svc-tree", 1400, 1000),
+    photo: null,
   },
 ];
 

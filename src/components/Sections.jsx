@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { BIZ, STATS, SERVICES, CITIES, PROCESS, PROMISES, PEEK, ONJOB, PHOTOS } from "@/lib/site";
 import QuoteForm from "./QuoteForm";
+import ComingSoon from "./ComingSoon";
 
 /* ---------- headings ---------- */
 export function SectionHead({ eyebrow, title, copy, light = false, center = false }) {
@@ -162,7 +163,6 @@ export function OnTheJob({ flush = false }) {
                     loading="eager"
                     sizes="260px"
                     className="object-cover"
-                    unoptimized
                   />
                 </div>
               ))}
@@ -191,14 +191,17 @@ export function ServiceCards({ items = SERVICES, heading = true }) {
           className="group bg-white flex flex-col grow shrink-0 basis-full sm:basis-[calc(50%-1px)] lg:basis-[255px] hover:bg-haze transition-colors"
         >
           <div className="relative aspect-[16/10] overflow-hidden bg-turf-dk">
-            <Image
-              src={s.photo}
-              alt={`${s.name} in Detroit, Michigan`}
-              fill
-              sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
-              className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-              unoptimized={s.photo.startsWith("http")}
-            />
+            {s.photo ? (
+              <Image
+                src={s.photo}
+                alt={`${s.name} in Detroit, Michigan`}
+                fill
+                sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
+                className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
+              />
+            ) : (
+              <ComingSoon small className="absolute inset-0" label="Photos coming soon" />
+            )}
             {s.tag && (
               <span className="absolute top-3 left-3 font-display text-[10px] font-bold tracking-[0.14em] uppercase bg-blade text-turf-dk px-2 py-1 rounded-[2px]">
                 {s.tag}

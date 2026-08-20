@@ -9,10 +9,10 @@ import {
   SectionHead,
   SectionCta,
   StatBar,
-  OnTheJob,
 } from "@/components/Sections";
 import Faq from "@/components/Faq";
 import BeforeAfterWheel from "@/components/BeforeAfterWheel";
+import ComingSoon from "@/components/ComingSoon";
 import JsonLd, { serviceSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
 import { SERVICES, CITIES, FAQS, getService, getBeforeAfter, BIZ } from "@/lib/site";
 
@@ -91,14 +91,18 @@ export default async function ServiceDetail({ params }) {
 
           <div className="lg:sticky lg:top-24">
             <div className="relative aspect-[4/5] rounded-[4px] overflow-hidden bg-turf-dk">
-              <Image
-                src={s.photo}
-                alt={`${s.name} on a property in Detroit, Michigan`}
-                fill
-                sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-                unoptimized={s.photo.startsWith("http")}
-              />
+              {s.photo ? (
+                <Image
+                  src={s.photoTall || s.photo}
+                  alt={`${s.name} on a property in Detroit, Michigan`}
+                  fill
+                  priority
+                  sizes="(max-width: 1024px) 100vw, 50vw"
+                  className="object-cover"
+                />
+              ) : (
+                <ComingSoon className="absolute inset-0" label={`${s.name} photos coming soon`} />
+              )}
             </div>
             <div className="mt-3.5 bg-haze border-l-[3px] border-blade px-5 py-3.5 rounded-r-[3px] flex flex-wrap items-center justify-between gap-3">
               <b className="font-display text-[15px] uppercase">Call {BIZ.phone}</b>
@@ -160,7 +164,21 @@ export default async function ServiceDetail({ params }) {
           copy={`Real ${s.name.toLowerCase()} jobs across Detroit, Redford, Southfield, West Bloomfield, and Warren. Shot before we started and again after we pulled away.`}
         />
       ) : (
-        <OnTheJob flush />
+        <section className="section-tight bg-haze pt-0">
+          <div className="shell">
+            <SectionHead
+              eyebrow="Before and after"
+              title={`${s.name} Photos Coming Soon`}
+              copy={`We are shooting before and after photos on every ${s.name.toLowerCase()} job this season. Until they are up, ask us for references or check the work on our other services.`}
+            />
+            <ComingSoon className="rounded-[4px] h-[220px] sm:h-[280px]" />
+            <SectionCta
+              className="mt-7"
+              primary={{ href: "/contact", label: "Get on the Schedule" }}
+              secondary={{ href: "/gallery", label: "See Our Work" }}
+            />
+          </div>
+        </section>
       )}
       <QuoteSection
         title={`Free Estimate for ${s.name}`}
