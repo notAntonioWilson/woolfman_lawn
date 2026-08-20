@@ -1,3 +1,4 @@
+import Script from "next/script";
 import { Archivo, Instrument_Sans } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
@@ -5,6 +6,8 @@ import Footer from "@/components/Footer";
 import MobileBar from "@/components/MobileBar";
 import JsonLd, { localBusiness } from "@/components/JsonLd";
 import { BIZ, SITE_URL } from "@/lib/site";
+
+const GA_ID = "G-P734LZDLFQ";
 
 const display = Archivo({
   subsets: ["latin"],
@@ -82,6 +85,19 @@ export default function RootLayout({ children }) {
         <main id="main">{children}</main>
         <Footer />
         <MobileBar />
+
+        {/* Google Analytics 4. next/script with afterInteractive loads it
+            after hydration so it never blocks first paint. */}
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="ga4" strategy="afterInteractive">
+          {`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        </Script>
       </body>
     </html>
   );
