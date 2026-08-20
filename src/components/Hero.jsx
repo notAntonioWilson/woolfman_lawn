@@ -16,6 +16,8 @@ export default function Hero() {
           alt={PHOTOS.hero.alt}
           fill
           priority
+          fetchPriority="high"
+          quality={65}
           sizes="100vw"
           className="object-cover"
         />

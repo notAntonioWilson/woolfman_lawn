@@ -190,7 +190,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
             <div className="sm:col-span-2">
               <label htmlFor="qf-source" className="field-label">
                 How did you hear about us?{" "}
-                <span className="text-stone/60 font-semibold tracking-normal">optional</span>
+                <span className="text-stone font-semibold tracking-normal">optional</span>
               </label>
               <select id="qf-source" className="field" value={form.source} onChange={set("source")}>
                 <option value="">Choose one</option>
@@ -204,7 +204,7 @@ export default function QuoteForm({ compact = false, defaultService = "", pageSo
             <div className="sm:col-span-2">
               <label htmlFor="qf-message" className="field-label">
                 Anything else we should know?{" "}
-                <span className="text-stone/60 font-semibold tracking-normal">optional</span>
+                <span className="text-stone font-semibold tracking-normal">optional</span>
               </label>
               <textarea
                 id="qf-message"

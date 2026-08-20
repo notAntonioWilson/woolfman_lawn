@@ -115,8 +115,9 @@ export function PhotoStrip({ eyebrow = "Sneak peek", title = "A Look At Our Work
                     src={p.src}
                     alt={p.alt}
                     fill
-                    loading="eager"
-                    sizes="400px"
+                    loading={k === 0 && i < 2 ? "eager" : "lazy"}
+                    quality={58}
+                    sizes="(max-width: 640px) 300px, 400px"
                     className="object-cover"
                   />
                 </div>
@@ -160,8 +161,9 @@ export function OnTheJob({ flush = false }) {
                     src={p.src}
                     alt={p.alt}
                     fill
-                    loading="eager"
-                    sizes="260px"
+                    loading={k === 0 && i < 3 ? "eager" : "lazy"}
+                    quality={58}
+                    sizes="(max-width: 640px) 200px, 260px"
                     className="object-cover"
                   />
                 </div>
@@ -196,6 +198,7 @@ export function ServiceCards({ items = SERVICES, heading = true }) {
                 src={s.photo}
                 alt={`${s.name} in Detroit, Michigan`}
                 fill
+                quality={65}
                 sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               />
@@ -265,7 +268,7 @@ export function CityGrid({ current = null }) {
             )}
           </div>
           <p className="text-stone text-[14px]">{c.blurb}</p>
-          <p className="text-stone/70 text-[12.5px] mt-3">{c.zips}</p>
+          <p className="text-stone text-[12.5px] mt-3">{c.zips}</p>
           <span className="mt-4 inline-block font-display text-[12.5px] font-bold tracking-[0.1em] uppercase text-turf">
             Lawn Care in {c.name} &rarr;
           </span>
@@ -328,7 +331,7 @@ export function ProcessSection({ flush = false }) {
         <div className="grid sm:grid-cols-2 border-t border-line">
           {PROCESS.map((p) => (
             <div key={p.n} className="py-5 pr-6 border-b border-line sm:odd:border-r">
-              <div className="font-display font-extrabold text-[13px] tracking-[0.1em] text-blade">
+              <div className="font-display font-extrabold text-[13px] tracking-[0.1em] text-turf">
                 {p.n}
               </div>
               <h4 className="text-[18px] uppercase mt-2 mb-1.5">{p.t}</h4>
@@ -386,6 +389,7 @@ export function OwnerSection() {
               src={PHOTOS.owner.src}
               alt={PHOTOS.owner.alt}
               fill
+              quality={65}
               sizes="(max-width: 1024px) 100vw, 50vw"
               className="object-cover object-top"
             />

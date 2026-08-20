@@ -15,6 +15,8 @@ export function Wordmark({ light = false }) {
         width={300}
         height={150}
         priority
+        quality={72}
+        sizes="68px"
         className="w-[62px] sm:w-[68px] h-auto shrink-0"
       />
       <span
@@ -25,7 +27,7 @@ export function Wordmark({ light = false }) {
         Woolfman
         <span
           className={`block text-[9px] font-semibold tracking-[0.19em] ${
-            light ? "text-white/45" : "text-stone"
+            light ? "text-white/70" : "text-stone"
           }`}
         >
           Lawn Services

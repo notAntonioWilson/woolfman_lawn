@@ -19,15 +19,16 @@ import { SectionHead, SectionCta } from "./Sections";
      late and slide in blank.
    ------------------------------------------------------------------ */
 
-function Tile({ photo, label }) {
+function Tile({ photo, label, eager = false }) {
   return (
     <div className="relative w-[190px] sm:w-[230px] lg:w-[250px] aspect-square rounded-[4px] overflow-hidden bg-turf-dk shrink-0">
       <Image
         src={photo.src}
         alt={photo.alt}
         fill
-        loading="eager"
-        sizes="250px"
+        loading={eager ? "eager" : "lazy"}
+        quality={58}
+        sizes="(max-width: 640px) 190px, 250px"
         className="object-cover"
       />
       <span
@@ -41,11 +42,11 @@ function Tile({ photo, label }) {
   );
 }
 
-function Pair({ item, hidden }) {
+function Pair({ item, hidden, eager = false }) {
   return (
     <div className="flex gap-1.5 shrink-0" aria-hidden={hidden || undefined}>
-      <Tile photo={item.before} label="Before" />
-      <Tile photo={item.after} label="After" />
+      <Tile photo={item.before} label="Before" eager={eager} />
+      <Tile photo={item.after} label="After" eager={eager} />
     </div>
   );
 }
@@ -82,8 +83,8 @@ export default function BeforeAfterWheel({
               small jump. */}
           {[0, 1].map((copy) => (
             <div key={copy} className="flex gap-7 pr-7 shrink-0">
-              {pairs.map((p) => (
-                <Pair key={`${p.id}-${copy}`} item={p} hidden={copy === 1} />
+              {pairs.map((p, i) => (
+                <Pair key={`${p.id}-${copy}`} item={p} hidden={copy === 1} eager={copy === 0 && i < 2} />
               ))}
             </div>
           ))}
