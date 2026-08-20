@@ -101,7 +101,7 @@ export default async function ServiceDetail({ params }) {
                   className="object-cover"
                 />
               ) : (
-                <ComingSoon className="absolute inset-0" />
+                <ComingSoon fill />
               )}
             </div>
             <div className="mt-3.5 bg-haze border-l-[3px] border-blade px-5 py-3.5 rounded-r-[3px] flex flex-wrap items-center justify-between gap-3">
@@ -171,7 +171,7 @@ export default async function ServiceDetail({ params }) {
               title={`${s.name} Photos Coming Soon`}
               copy={`We are shooting before and after photos on every ${s.name.toLowerCase()} job this season. Until they are up, ask us for references or check the work on our other services.`}
             />
-            <ComingSoon className="rounded-[4px] h-[220px] sm:h-[280px]" />
+            <ComingSoon className="rounded-[4px] h-[240px] sm:h-[320px]" />
             <SectionCta
               className="mt-7"
               primary={{ href: "/contact", label: "Get on the Schedule" }}

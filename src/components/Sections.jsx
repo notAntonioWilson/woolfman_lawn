@@ -200,7 +200,7 @@ export function ServiceCards({ items = SERVICES, heading = true }) {
                 className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
               />
             ) : (
-              <ComingSoon small className="absolute inset-0" />
+              <ComingSoon fill small />
             )}
             {s.tag && (
               <span className="absolute top-3 left-3 font-display text-[10px] font-bold tracking-[0.14em] uppercase bg-blade text-turf-dk px-2 py-1 rounded-[2px]">
