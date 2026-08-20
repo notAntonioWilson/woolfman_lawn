@@ -101,7 +101,7 @@ export default async function ServiceDetail({ params }) {
                   className="object-cover"
                 />
               ) : (
-                <ComingSoon className="absolute inset-0" label={`${s.name} photos coming soon`} />
+                <ComingSoon className="absolute inset-0" />
               )}
             </div>
             <div className="mt-3.5 bg-haze border-l-[3px] border-blade px-5 py-3.5 rounded-r-[3px] flex flex-wrap items-center justify-between gap-3">

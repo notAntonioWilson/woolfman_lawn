@@ -80,6 +80,13 @@
       rgba(0, 0, 0, 0.04) 44px 88px
     );
   }
+  .stripe-bold {
+    background-image: repeating-linear-gradient(
+      114deg,
+      rgba(255, 255, 255, 0.045) 0 58px,
+      rgba(255, 255, 255, 0.105) 58px 116px
+    );
+  }
   .stripe-soft {
     background-image: repeating-linear-gradient(
       114deg,
