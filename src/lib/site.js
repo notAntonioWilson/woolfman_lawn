@@ -67,10 +67,6 @@ export const PHOTOS = {
     src: "/images/owner.jpg",
     alt: "Keonte Woolf, owner of Woolfman Lawn Services, clearing a sidewalk in metro Detroit",
   },
-  ownerWide: {
-    src: "/images/owner-wide.jpg",
-    alt: "Keonte Woolf on a lawn care job in metro Detroit",
-  },
   aboutTruck: {
     src: "/images/about-truck.jpg",
     alt: "Woolfman Lawn Services truck parked on a job in metro Detroit",
