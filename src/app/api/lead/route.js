@@ -59,16 +59,25 @@ export async function POST(request) {
   }
 
   try {
+    // n8n is on a free Render instance that can cold-start, so allow a long
+    // window before giving up rather than failing a real lead.
+    const controller = new AbortController();
+    const timeout = setTimeout(() => controller.abort(), 25000);
+
     const res = await fetch(webhook, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(lead),
+      signal: controller.signal,
     });
+    clearTimeout(timeout);
+
     if (!res.ok) throw new Error(`Webhook responded ${res.status}`);
     return NextResponse.json({ ok: true, forwarded: true });
   } catch (err) {
-    // Never lose a lead. Log it so it can be recovered from Vercel logs.
-    console.error("[LEAD] Webhook failed. Lead payload:", lead, err);
+    // Never lose a lead. The visitor still sees success; the full payload goes
+    // to the Vercel runtime log so it can be recovered by hand.
+    console.error("[LEAD] Webhook failed. Lead payload:", JSON.stringify(lead), err);
     return NextResponse.json({ ok: true, forwarded: false });
   }
 }
