@@ -13,6 +13,9 @@ import { NextResponse } from "next/server";
    local development still works.
    ------------------------------------------------------------------ */
 
+const DEFAULT_WEBHOOK_URL =
+  "https://n8n-self-host-xogy.onrender.com/webhook/aa096b86-4af2-40ab-90a8-ddb090dabcf4";
+
 export async function POST(request) {
   let data;
   try {
@@ -51,12 +54,9 @@ export async function POST(request) {
     userAgent: request.headers.get("user-agent") || "",
   };
 
-  const webhook = process.env.LEAD_WEBHOOK_URL;
-
-  if (!webhook) {
-    console.log("[LEAD] No LEAD_WEBHOOK_URL set. Lead received:", lead);
-    return NextResponse.json({ ok: true, forwarded: false });
-  }
+  // LEAD_WEBHOOK_URL wins if set in Vercel; otherwise fall back to the live
+  // n8n production webhook so the form works without any env configuration.
+  const webhook = process.env.LEAD_WEBHOOK_URL || DEFAULT_WEBHOOK_URL;
 
   try {
     // n8n is on a free Render instance that can cold-start, so allow a long
