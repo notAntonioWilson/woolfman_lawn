@@ -2,6 +2,15 @@ Real photos live here. To swap a placeholder: drop the file in this folder,
 then open src/lib/site.js and change the matching src from the
 picsum.photos placeholder to "/images/your-file.jpg".
 
+BEFORE / AFTER PAIRS:
+  Files live in /public/images/ba/ as ba-NN-before.jpg and ba-NN-after.jpg.
+  Crop both shots SQUARE at 640x640, JPEG quality ~74, before adding them.
+  Then add the pair number to the matching service in BEFORE_AFTER in
+  src/lib/site.js, and write its one-line label in PAIR_LABELS.
+  A pair can be listed under more than one service (pair 6 is on both
+  lawn-maintenance and bush-trimming).
+  Currently: lawn-maintenance has 7 pairs, bush-trimming has 4.
+
 ALREADY REAL:
   /images/owner.jpg       -> PHOTOS.owner      (Keonte, used on Home + About)
   /images/owner-wide.jpg  -> PHOTOS.ownerWide

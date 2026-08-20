@@ -338,6 +338,48 @@ export const CITIES = [
   },
 ];
 
+/* ------------------------------------------------------------
+   BEFORE / AFTER PAIRS
+   Files live in /public/images/ba/ as ba-NN-before.jpg and
+   ba-NN-after.jpg. To add a pair: crop both shots square, drop
+   them in that folder with the next number, then add an entry
+   here under whichever service it belongs to. A pair can appear
+   under more than one service.
+   ------------------------------------------------------------ */
+const baPair = (n, label) => ({
+  id: `ba-${String(n).padStart(2, "0")}`,
+  before: {
+    src: `/images/ba/ba-${String(n).padStart(2, "0")}-before.jpg`,
+    alt: `Before: ${label}, metro Detroit`,
+  },
+  after: {
+    src: `/images/ba/ba-${String(n).padStart(2, "0")}-after.jpg`,
+    alt: `After: ${label}, metro Detroit`,
+  },
+});
+
+const PAIR_LABELS = {
+  1: "walkway buried in clippings and weeds, cleared and blown off",
+  2: "overgrown hedge row shaped back to a clean line",
+  3: "front lawn cut and striped",
+  4: "vines and branches taken off a side walkway",
+  5: "fence line edged and trimmed out",
+  6: "front bush shaped and the lawn cut",
+  7: "weeds and volunteer growth cleared off a foundation bed",
+  8: "backyard knocked down and cleaned up",
+  9: "sidewalk and tree lawn cleared of weeds",
+  10: "driveway edged and the cracks cleared",
+};
+
+const pair = (n) => baPair(n, PAIR_LABELS[n]);
+
+export const BEFORE_AFTER = {
+  "lawn-maintenance": [1, 3, 5, 6, 8, 9, 10].map(pair),
+  "bush-trimming": [2, 4, 6, 7].map(pair),
+};
+
+export const getBeforeAfter = (slug) => BEFORE_AFTER[slug] || null;
+
 export const FAQS = [
   {
     q: "How do estimates work?",

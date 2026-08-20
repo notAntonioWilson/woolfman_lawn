@@ -12,8 +12,9 @@ import {
   OnTheJob,
 } from "@/components/Sections";
 import Faq from "@/components/Faq";
+import BeforeAfterWheel from "@/components/BeforeAfterWheel";
 import JsonLd, { serviceSchema, breadcrumbSchema, faqSchema } from "@/components/JsonLd";
-import { SERVICES, CITIES, FAQS, getService, BIZ } from "@/lib/site";
+import { SERVICES, CITIES, FAQS, getService, getBeforeAfter, BIZ } from "@/lib/site";
 
 export function generateStaticParams() {
   return SERVICES.map((s) => ({ slug: s.slug }));
@@ -37,6 +38,7 @@ export default async function ServiceDetail({ params }) {
   if (!s) notFound();
 
   const others = SERVICES.filter((x) => x.slug !== s.slug).slice(0, 3);
+  const pairs = getBeforeAfter(s.slug);
 
   return (
     <>
@@ -149,7 +151,17 @@ export default async function ServiceDetail({ params }) {
         </div>
       </section>
 
-      <OnTheJob flush />
+      {pairs ? (
+        <BeforeAfterWheel
+          flush
+          pairs={pairs}
+          eyebrow="Before and after"
+          title={`${s.name} Before And After`}
+          copy={`Real ${s.name.toLowerCase()} jobs across Detroit, Redford, Southfield, West Bloomfield, and Warren. Shot before we started and again after we pulled away.`}
+        />
+      ) : (
+        <OnTheJob flush />
+      )}
       <QuoteSection
         title={`Free Estimate for ${s.name}`}
         defaultService={s.name}

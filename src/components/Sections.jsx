@@ -101,24 +101,28 @@ export function PhotoStrip({ eyebrow = "Sneak peek", title = "A Look At Our Work
         />
       </div>
       <div className="overflow-hidden mask-fade">
-        <div className="flex gap-3.5 w-max animate-marquee-fast">
-          {[0, 1].map((k) =>
-            PEEK.map((p, i) => (
-              <div
-                key={`${k}-${i}`}
-                className="relative w-[300px] sm:w-[400px] aspect-[4/3] rounded-[4px] overflow-hidden bg-turf-dk"
-              >
-                <Image
-                  src={p.src}
-                  alt={p.alt}
-                  fill
-                  sizes="400px"
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
-            ))
-          )}
+        <div className="flex w-max animate-marquee-fast" style={{ willChange: "transform" }}>
+          {[0, 1].map((k) => (
+            <div key={k} className="flex gap-3.5 pr-3.5 shrink-0">
+              {PEEK.map((p, i) => (
+                <div
+                  key={`${k}-${i}`}
+                  className="relative w-[300px] sm:w-[400px] aspect-[4/3] rounded-[4px] overflow-hidden bg-turf-dk"
+                  aria-hidden={k === 1 || undefined}
+                >
+                  <Image
+                    src={p.src}
+                    alt={p.alt}
+                    fill
+                    loading="eager"
+                    sizes="400px"
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
       <div className="shell mt-7">
@@ -143,24 +147,28 @@ export function OnTheJob({ flush = false }) {
         />
       </div>
       <div className="overflow-hidden mask-fade">
-        <div className="flex gap-3 w-max animate-marquee">
-          {[0, 1].map((k) =>
-            ONJOB.map((p, i) => (
-              <div
-                key={`${k}-${i}`}
-                className="relative w-[200px] sm:w-[260px] aspect-square rounded-[4px] overflow-hidden bg-turf-dk"
-              >
-                <Image
-                  src={p.src}
-                  alt={p.alt}
-                  fill
-                  sizes="260px"
-                  className="object-cover"
-                  unoptimized
-                />
-              </div>
-            ))
-          )}
+        <div className="flex w-max animate-marquee" style={{ willChange: "transform" }}>
+          {[0, 1].map((k) => (
+            <div key={k} className="flex gap-3 pr-3 shrink-0">
+              {ONJOB.map((p, i) => (
+                <div
+                  key={`${k}-${i}`}
+                  className="relative w-[200px] sm:w-[260px] aspect-square rounded-[4px] overflow-hidden bg-turf-dk"
+                  aria-hidden={k === 1 || undefined}
+                >
+                  <Image
+                    src={p.src}
+                    alt={p.alt}
+                    fill
+                    loading="eager"
+                    sizes="260px"
+                    className="object-cover"
+                    unoptimized
+                  />
+                </div>
+              ))}
+            </div>
+          ))}
         </div>
       </div>
       <div className="shell mt-7">
