@@ -57,8 +57,14 @@ const ph = (seed, w = 1600, h = 1000) =>
 export const PHOTOS = {
   hero: { src: ph("hero", 2000, 1200), alt: "Freshly cut and striped lawn in Detroit, Michigan" },
   heroMobile: { src: ph("hero", 1200, 1600), alt: "Freshly cut and striped lawn in Detroit, Michigan" },
-  owner: { src: ph("owner", 1200, 1500), alt: "Keonte Woolf, owner of Woolfman Lawn Services" },
-  ownerWide: { src: ph("owner-wide", 1800, 1000), alt: "Keonte Woolf on a job in Detroit" },
+  owner: {
+    src: "/images/owner.jpg",
+    alt: "Keonte Woolf, owner of Woolfman Lawn Services, clearing a sidewalk in metro Detroit",
+  },
+  ownerWide: {
+    src: "/images/owner-wide.jpg",
+    alt: "Keonte Woolf on a lawn care job in metro Detroit",
+  },
   aboutTruck: { src: ph("truck", 1600, 1100), alt: "Woolfman Lawn Services truck and trailer" },
   aboutCrew: { src: ph("crew", 1600, 1100), alt: "The Woolfman Lawn Services crew on a job" },
   areaMap: { src: ph("area", 1600, 1100), alt: "Metro Detroit neighborhood served by Woolfman Lawn Services" },

@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { BIZ, STATS, SERVICES, CITIES, PROCESS, PROMISES, PEEK, ONJOB } from "@/lib/site";
+import { BIZ, STATS, SERVICES, CITIES, PROCESS, PROMISES, PEEK, ONJOB, PHOTOS } from "@/lib/site";
 import QuoteForm from "./QuoteForm";
 
 /* ---------- headings ---------- */
@@ -373,12 +373,11 @@ export function OwnerSection() {
         <div className="relative mb-6 lg:mb-0">
           <div className="relative aspect-[4/5] rounded-[4px] overflow-hidden bg-turf-dk">
             <Image
-              src="https://picsum.photos/seed/wf-owner/1200/1500"
-              alt={`${BIZ.ownerFull}, owner of ${BIZ.name}`}
+              src={PHOTOS.owner.src}
+              alt={PHOTOS.owner.alt}
               fill
               sizes="(max-width: 1024px) 100vw, 50vw"
-              className="object-cover"
-              unoptimized
+              className="object-cover object-top"
             />
           </div>
           <div className="absolute -bottom-4 left-4 bg-blade text-turf-dk px-5 py-3.5 rounded-[3px]">

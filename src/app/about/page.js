@@ -58,8 +58,7 @@ export default function About() {
                 fill
                 priority
                 sizes="(max-width: 1024px) 100vw, 50vw"
-                className="object-cover"
-                unoptimized
+                className="object-cover object-top"
               />
             </div>
             <div className="absolute -bottom-4 left-4 bg-blade text-turf-dk px-5 py-3.5 rounded-[3px]">

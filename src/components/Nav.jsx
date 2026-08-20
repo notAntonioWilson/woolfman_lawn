@@ -1,22 +1,22 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { useState, useEffect, useRef } from "react";
 import { BIZ, NAV_LINKS, SERVICES } from "@/lib/site";
 
 export function Wordmark({ light = false }) {
   return (
-    <span className="flex items-center gap-[11px] shrink-0">
-      <span className="relative w-[34px] h-[34px] rounded-[3px] bg-turf overflow-hidden">
-        <span
-          className="absolute inset-0"
-          style={{
-            backgroundImage:
-              "repeating-linear-gradient(114deg, rgba(255,255,255,.22) 0 5px, transparent 5px 10px)",
-          }}
-        />
-      </span>
+    <span className="flex items-center gap-2.5 shrink-0">
+      <Image
+        src="/logo-mark.png"
+        alt=""
+        width={300}
+        height={150}
+        priority
+        className="w-[62px] sm:w-[68px] h-auto shrink-0"
+      />
       <span
         className={`font-display font-black text-[15px] tracking-[-0.02em] leading-[1.05] uppercase ${
           light ? "text-white" : "text-ink"

@@ -51,12 +51,16 @@ export const metadata = {
     title: "Lawn Care & Landscaping in Detroit, MI | Woolfman Lawn Services",
     description:
       "Weekly lawn maintenance, mulch, sod, cleanups, and snow removal across metro Detroit. 150+ properties serviced. Free estimates.",
+    images: [
+      { url: "/og.jpg", width: 1200, height: 630, alt: "Woolfman Lawn Services, Detroit Michigan" },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Lawn Care & Landscaping in Detroit, MI | Woolfman Lawn Services",
     description:
       "Licensed and insured lawn care across Detroit, Redford, Southfield, West Bloomfield, and Warren. Free estimates.",
+    images: ["/og.jpg"],
   },
   robots: { index: true, follow: true },
 };
