@@ -18,7 +18,6 @@ export default function Hero() {
           priority
           sizes="100vw"
           className="object-cover"
-          unoptimized
         />
         <div className="absolute inset-0 bg-gradient-to-b from-turf-dp/95 via-turf-dp/92 to-turf-dp/85 lg:bg-gradient-to-r lg:from-turf-dp lg:via-turf-dp/90 lg:to-turf-dp/55" />
         <div className="absolute inset-0 stripe-bg animate-drift" />

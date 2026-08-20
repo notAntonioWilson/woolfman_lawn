@@ -55,8 +55,14 @@ const ph = (seed, w = 1600, h = 1000) =>
   `https://picsum.photos/seed/wf-${seed}/${w}/${h}`;
 
 export const PHOTOS = {
-  hero: { src: ph("hero", 2000, 1200), alt: "Freshly cut and striped lawn in Detroit, Michigan" },
-  heroMobile: { src: ph("hero", 1200, 1600), alt: "Freshly cut and striped lawn in Detroit, Michigan" },
+  hero: {
+    src: "/images/hero.jpg",
+    alt: "Freshly cut and striped front lawn serviced by Woolfman Lawn Services in metro Detroit",
+  },
+  heroMobile: {
+    src: "/images/hero.jpg",
+    alt: "Freshly cut and striped front lawn serviced by Woolfman Lawn Services in metro Detroit",
+  },
   owner: {
     src: "/images/owner.jpg",
     alt: "Keonte Woolf, owner of Woolfman Lawn Services, clearing a sidewalk in metro Detroit",
@@ -72,11 +78,11 @@ export const PHOTOS = {
 };
 
 export const PEEK = [
-  { src: ph("peek-1", 1200, 900), alt: "Front lawn cut and edged in Detroit" },
-  { src: ph("peek-2", 1200, 900), alt: "Fresh mulch bed with a clean spade edge" },
-  { src: ph("peek-3", 1200, 900), alt: "New sod laid and rolled on a Redford property" },
-  { src: ph("peek-4", 1200, 900), alt: "Fall leaf cleanup along a Southfield curb line" },
-  { src: ph("peek-5", 1200, 900), alt: "Cleared driveway after a Warren snowfall" },
+  { src: "/images/peek-1.jpg", alt: "Striped front lawn after a cut in metro Detroit" },
+  { src: "/images/peek-2.jpg", alt: "Corner lot cut and edged clean to the driveway" },
+  { src: "/images/peek-3.jpg", alt: "Front lawn cut and striped, Woolfman truck on the drive" },
+  { src: "/images/peek-4.jpg", alt: "Front lawn and tree lawn cut down and edged" },
+  { src: "/images/peek-5.jpg", alt: "Brick ranch with a freshly striped front lawn" },
 ];
 
 export const ONJOB = Array.from({ length: 12 }, (_, i) => ({
@@ -115,7 +121,7 @@ export const SERVICES = [
       "Line trim fences, posts, and obstacles",
       "Blow off drive, walk, and porch",
     ],
-    photo: ph("svc-lawn", 1400, 1000),
+    photo: "/images/svc-lawn.jpg",
   },
   {
     slug: "mulching",
@@ -240,7 +246,7 @@ export const SERVICES = [
       "Sweep beds, walks, and drive",
       "Haul away all clippings",
     ],
-    photo: ph("svc-bush", 1400, 1000),
+    photo: "/images/svc-bush.jpg",
   },
   {
     slug: "tree-trimming",
@@ -369,13 +375,20 @@ const PAIR_LABELS = {
   8: "backyard knocked down and cleaned up",
   9: "sidewalk and tree lawn cleared of weeds",
   10: "driveway edged and the cracks cleared",
+  11: "weeds cleared off the concrete along a fence line",
+  12: "brush and volunteer growth taken off a side walkway",
+  13: "heavy weeds cleared from a fence line and walk",
+  14: "overgrown brush cut back off a shed and fence",
+  15: "driveway cleared and the seams cleaned out",
+  16: "front lawn and tree lawn cut down and edged",
+  17: "grass and weeds trimmed out along a fence base",
 };
 
 const pair = (n) => baPair(n, PAIR_LABELS[n]);
 
 export const BEFORE_AFTER = {
-  "lawn-maintenance": [1, 3, 5, 6, 8, 9, 10].map(pair),
-  "bush-trimming": [2, 4, 6, 7].map(pair),
+  "lawn-maintenance": [1, 3, 5, 6, 8, 9, 10, 11, 15, 16, 17].map(pair),
+  "bush-trimming": [2, 4, 6, 7, 12, 13, 14].map(pair),
 };
 
 export const getBeforeAfter = (slug) => BEFORE_AFTER[slug] || null;

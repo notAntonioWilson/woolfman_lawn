@@ -117,7 +117,6 @@ export function PhotoStrip({ eyebrow = "Sneak peek", title = "A Look At Our Work
                     loading="eager"
                     sizes="400px"
                     className="object-cover"
-                    unoptimized
                   />
                 </div>
               ))}
@@ -198,7 +197,7 @@ export function ServiceCards({ items = SERVICES, heading = true }) {
               fill
               sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 320px"
               className="object-cover transition-transform duration-500 group-hover:scale-[1.04]"
-              unoptimized
+              unoptimized={s.photo.startsWith("http")}
             />
             {s.tag && (
               <span className="absolute top-3 left-3 font-display text-[10px] font-bold tracking-[0.14em] uppercase bg-blade text-turf-dk px-2 py-1 rounded-[2px]">

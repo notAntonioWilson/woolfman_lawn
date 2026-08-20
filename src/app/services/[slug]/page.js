@@ -97,7 +97,7 @@ export default async function ServiceDetail({ params }) {
                 fill
                 sizes="(max-width: 1024px) 100vw, 50vw"
                 className="object-cover"
-                unoptimized
+                unoptimized={s.photo.startsWith("http")}
               />
             </div>
             <div className="mt-3.5 bg-haze border-l-[3px] border-blade px-5 py-3.5 rounded-r-[3px] flex flex-wrap items-center justify-between gap-3">
