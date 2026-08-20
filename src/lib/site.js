@@ -5,7 +5,7 @@
    everywhere, including metadata, sitemap, and schema.
    ============================================================ */
 
-export const SITE_URL = "https://woolfmanlawnservices.com";
+export const SITE_URL = "https://www.lawnwoolf.com";
 
 export const BIZ = {
   name: "Woolfman Lawn Services",
@@ -105,6 +105,7 @@ export const GALLERY = Array.from({ length: 15 }, (_, i) => ({
 export const SERVICES = [
   {
     slug: "lawn-maintenance",
+    metaTitle: "Lawn Mowing in Detroit, MI",
     h1: "Lawn Mowing & Maintenance in Detroit, MI",
     name: "Lawn Maintenance",
     tag: "Most requested",
@@ -131,6 +132,7 @@ export const SERVICES = [
   },
   {
     slug: "mulching",
+    metaTitle: "Mulch Installation in Detroit, MI",
     h1: "Mulch Installation & Bed Edging in Detroit, MI",
     name: "Mulching",
     tag: "Best value upgrade",
@@ -156,6 +158,7 @@ export const SERVICES = [
   },
   {
     slug: "sod-installation",
+    metaTitle: "Sod Installation in Detroit, MI",
     h1: "Sod Installation & New Lawn Install in Detroit, MI",
     name: "Sod Installation",
     tag: null,
@@ -181,6 +184,7 @@ export const SERVICES = [
   },
   {
     slug: "leaf-removal",
+    metaTitle: "Leaf Removal in Detroit, MI",
     h1: "Leaf Removal & Fall Yard Cleanup in Detroit, MI",
     name: "Leaf Removal",
     tag: "Fall",
@@ -206,6 +210,7 @@ export const SERVICES = [
   },
   {
     slug: "snow-removal",
+    metaTitle: "Snow Removal in Detroit, MI",
     h1: "Snow Removal & Driveway Plowing in Detroit, MI",
     name: "Snow Removal",
     tag: "Winter",
@@ -231,6 +236,7 @@ export const SERVICES = [
   },
   {
     slug: "bush-trimming",
+    metaTitle: "Bush Trimming in Detroit, MI",
     h1: "Bush Trimming & Hedge Shaping in Detroit, MI",
     name: "Bush Trimming",
     tag: null,
@@ -257,6 +263,7 @@ export const SERVICES = [
   },
   {
     slug: "tree-trimming",
+    metaTitle: "Tree Trimming in Detroit, MI",
     h1: "Tree Trimming & Limb Removal in Detroit, MI",
     name: "Tree Trimming",
     tag: null,

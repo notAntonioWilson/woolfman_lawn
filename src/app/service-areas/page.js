@@ -12,7 +12,7 @@ import JsonLd, { breadcrumbSchema } from "@/components/JsonLd";
 import { CITIES } from "@/lib/site";
 
 export const metadata = {
-  title: "Service Areas Across Metro Detroit",
+  title: "Service Areas in Metro Detroit",
   description:
     "Woolfman Lawn Services covers Detroit, Redford, Southfield, West Bloomfield, and Warren with weekly lawn maintenance, mulch, sod, cleanups, and snow removal. Free estimates.",
   alternates: { canonical: "/service-areas" },

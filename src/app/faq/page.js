@@ -11,7 +11,7 @@ import JsonLd, { faqSchema, breadcrumbSchema } from "@/components/JsonLd";
 import { FAQS, BIZ } from "@/lib/site";
 
 export const metadata = {
-  title: "Frequently Asked Questions",
+  title: "Lawn Care FAQ",
   description:
     "Estimates, scheduling, contracts, insurance, and service areas. The questions Detroit homeowners ask Woolfman Lawn Services every week.",
   alternates: { canonical: "/faq" },

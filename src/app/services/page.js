@@ -14,7 +14,7 @@ import JsonLd, { breadcrumbSchema } from "@/components/JsonLd";
 import { FAQS, SERVICES } from "@/lib/site";
 
 export const metadata = {
-  title: "Lawn & Landscaping Services in Detroit, MI",
+  title: "Lawn Services in Detroit, MI",
   description:
     "Lawn maintenance, mulching, sod installation, leaf removal, snow removal, bush trimming, and tree trimming across Detroit, Redford, Southfield, West Bloomfield, and Warren. Free estimates.",
   alternates: { canonical: "/services" },

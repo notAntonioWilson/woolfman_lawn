@@ -51,6 +51,36 @@ export const localBusiness = {
     containedInPlace: { "@type": "State", name: "Michigan" },
   })),
   sameAs: [BIZ.social.instagram, BIZ.social.facebook],
+  logo: {
+    "@type": "ImageObject",
+    url: `${SITE_URL}/logo-mark.png`,
+    width: 300,
+    height: 150,
+  },
+  slogan: BIZ.tagline,
+  currenciesAccepted: "USD",
+  paymentAccepted: "Cash, Check, Card",
+  knowsAbout: [
+    "Lawn mowing",
+    "Lawn maintenance",
+    "Mulch installation",
+    "Sod installation",
+    "Leaf removal",
+    "Yard cleanup",
+    "Bush and hedge trimming",
+    "Tree trimming",
+    "Snow removal",
+    "Driveway plowing",
+  ],
+  serviceArea: {
+    "@type": "GeoCircle",
+    geoMidpoint: {
+      "@type": "GeoCoordinates",
+      latitude: BIZ.address.lat,
+      longitude: BIZ.address.lng,
+    },
+    geoRadius: "24000",
+  },
   hasOfferCatalog: {
     "@type": "OfferCatalog",
     name: "Lawn and Landscaping Services",
@@ -64,6 +94,18 @@ export const localBusiness = {
       },
     })),
   },
+};
+
+export const webSite = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${SITE_URL}/#website`,
+  url: SITE_URL,
+  name: BIZ.name,
+  description:
+    "Licensed and insured lawn care and landscaping in Detroit, Michigan, serving Detroit, Redford, Southfield, West Bloomfield, and Warren.",
+  publisher: { "@id": `${SITE_URL}/#business` },
+  inLanguage: "en-US",
 };
 
 export default function JsonLd({ data }) {

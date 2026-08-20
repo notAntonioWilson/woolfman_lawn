@@ -36,7 +36,7 @@ export async function POST(request) {
   if (data.company) return NextResponse.json({ ok: true });
 
   const lead = {
-    source: "woolfmanlawnservices.com",
+    source: "lawnwoolf.com",
     name,
     phone,
     email,

@@ -25,7 +25,7 @@ export async function generateMetadata({ params }) {
   const s = getService(slug);
   if (!s) return {};
   return {
-    title: s.h1 || `${s.name} in Detroit, MI`,
+    title: s.metaTitle || s.h1 || `${s.name} in Detroit, MI`,
     description: `${s.intro} Serving Detroit, Redford, Southfield, West Bloomfield, and Warren. Free estimates from Woolfman Lawn Services.`,
     alternates: { canonical: `/services/${s.slug}` },
     openGraph: { title: s.h1 || `${s.name} in Detroit, MI`, description: s.intro },

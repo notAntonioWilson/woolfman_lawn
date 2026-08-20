@@ -19,7 +19,7 @@ import {
 import { FAQS } from "@/lib/site";
 
 export const metadata = {
-  title: "Lawn Care & Landscaping in Detroit, MI | Woolfman Lawn Services",
+  title: { absolute: "Lawn Care & Landscaping in Detroit, MI | Woolfman Lawn" },
   description:
     "Licensed and insured lawn care in Detroit, MI. Weekly maintenance, mulching, sod, leaf removal, and snow removal across Detroit, Redford, Southfield, West Bloomfield, and Warren. 150+ properties serviced. Free estimates.",
   alternates: { canonical: "/" },

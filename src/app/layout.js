@@ -4,7 +4,7 @@ import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
 import MobileBar from "@/components/MobileBar";
-import JsonLd, { localBusiness } from "@/components/JsonLd";
+import JsonLd, { localBusiness, webSite } from "@/components/JsonLd";
 import { BIZ, SITE_URL } from "@/lib/site";
 
 const GA_ID = "G-P734LZDLFQ";
@@ -73,8 +73,13 @@ export const viewport = { themeColor: "#16512F" };
 export default function RootLayout({ children }) {
   return (
     <html lang="en" className={`${display.variable} ${body.variable}`}>
+      <head>
+        <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+        <link rel="alternate" type="text/plain" href="/llms.txt" title="llms.txt" />
+      </head>
       <body>
         <JsonLd data={localBusiness} />
+        <JsonLd data={webSite} />
         <a
           href="#main"
           className="sr-only focus:not-sr-only focus:absolute focus:z-[100] focus:top-3 focus:left-3 focus:bg-blade focus:text-turf-dk focus:px-4 focus:py-2 focus:rounded"

@@ -12,7 +12,7 @@ import JsonLd, { breadcrumbSchema } from "@/components/JsonLd";
 import { GALLERY, CITIES } from "@/lib/site";
 
 export const metadata = {
-  title: "Project Gallery | Lawn & Landscaping Work in Metro Detroit",
+  title: "Project Gallery",
   description:
     "Completed lawn maintenance, mulch, sod, cleanup, and snow removal jobs across Detroit, Redford, Southfield, West Bloomfield, and Warren.",
   alternates: { canonical: "/gallery" },

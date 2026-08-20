@@ -24,11 +24,11 @@ export async function generateMetadata({ params }) {
   const c = getCity(city);
   if (!c) return {};
   return {
-    title: `Lawn Care & Landscaping in ${c.name}, MI`,
+    title: `Lawn Care in ${c.name}, MI`,
     description: `${c.intro} Lawn maintenance, mulch, sod, cleanups, and snow removal in ${c.name}, Michigan. Licensed and insured. Free estimates.`,
     alternates: { canonical: `/service-areas/${c.slug}` },
     openGraph: {
-      title: `Lawn Care & Landscaping in ${c.name}, MI`,
+      title: `Lawn Care in ${c.name}, MI`,
       description: c.intro,
     },
   };

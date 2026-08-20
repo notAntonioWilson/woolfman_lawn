@@ -25,7 +25,7 @@ npm run build && npm start   # production build
 1. `git init && git add -A && git commit -m "initial"`
 2. Push to a new GitHub repo.
 3. In Vercel: **Add New → Project → import the repo**. Framework auto-detects as Next.js. No build settings to change.
-4. Add the domain `woolfmanlawnservices.com` under **Settings → Domains** and point the registrar's nameservers or A/CNAME records at Vercel.
+4. Add the domain `lawnwoolf.com` under **Settings → Domains** and point the registrar's nameservers or A/CNAME records at Vercel.
 5. Add the env var below once the n8n flow exists.
 
 ---
@@ -46,7 +46,7 @@ Payload shape sent to the webhook:
 
 ```json
 {
-  "source": "woolfmanlawnservices.com",
+  "source": "lawnwoolf.com",
   "name": "", "phone": "", "email": "",
   "city": "",
   "service": "", "timing": "",

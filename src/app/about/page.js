@@ -15,7 +15,7 @@ import JsonLd, { breadcrumbSchema } from "@/components/JsonLd";
 import { BIZ, PHOTOS, SITE_URL } from "@/lib/site";
 
 export const metadata = {
-  title: "About Keonte Woolf & Woolfman Lawn Services",
+  title: "About Keonte Woolf",
   description:
     "Woolfman Lawn Services is a licensed and insured Detroit LLC owned by Keonte Woolf. Two years in business, 150+ properties serviced across metro Detroit.",
   alternates: { canonical: "/about" },
